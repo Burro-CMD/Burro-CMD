@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Burro-CMD&#39;S BLOG">
 <meta property="og:description" content="欢迎参与讨论，转载请注明出处。 前言  MacOS Mojave:10.14.5 检查Mac自带Python版本 在Launchpad找到终端，输入Python； 终端显示Python2.7.10，按住Control+D来退出Python运行环境。    安装X-code 在终端输入X-code-select –install, 按Enter； 安装完成，在终端输入X-code-select">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2019-09-04T06:33:48.256Z">
+<meta property="og:updated_time" content="2020-04-09T06:16:44.762Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac环境下安装Python3">
 <meta name="twitter:description" content="欢迎参与讨论，转载请注明出处。 前言  MacOS Mojave:10.14.5 检查Mac自带Python版本 在Launchpad找到终端，输入Python； 终端显示Python2.7.10，按住Control+D来退出Python运行环境。    安装X-code 在终端输入X-code-select –install, 按Enter； 安装完成，在终端输入X-code-select">
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-09-04T14:33:48+08:00">
-                2019-09-04
+              <time title="Post modified" itemprop="dateModified" datetime="2020-04-09T14:16:44+08:00">
+                2020-04-09
               </time>
             
           </span>
@@ -422,16 +422,23 @@
 </ul>
 <h2 id="安装X-code"><a href="#安装X-code" class="headerlink" title="安装X-code"></a>安装X-code</h2><ul>
 <li>在终端输入X-code-select –install, 按Enter；</li>
-<li>安装完成，在终端输入X-code-select -p来检查Xcode的安装位置，按住Control+D结束命令。  </li>
+<li>安装完成，在终端输入X-code-select -p来检查Xcode的安装位置，按住Control+D结束命令。</li>
 </ul>
+<p>  <strong>如果已经安装了Xcode，请不要再安装 OSX-GCC-Installer。两者结合可能会引发难以诊断的问题。</strong>  </p>
 <h2 id="安装Brew"><a href="#安装Brew" class="headerlink" title="安装Brew"></a>安装Brew</h2><ul>
-<li>打开Brew官网：<a href="https://brew.sh" target="_blank" rel="noopener">https://brew.sh</a>, <code>在brew官网复制/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</code>，粘贴到Mac终端，按Enter，安装完成之后显示Installation successful</li>
+<li>打开Brew官网：<a href="https://brew.sh" target="_blank" rel="noopener">https://brew.sh</a>, <figure class="highlight plain"><figcaption><span>-e "$(curl -fsSL</span><a href="https://raw.githubusercontent.com/Homebrew/install/master/install)```，粘贴到Mac终端，按Enter，安装完成之后显示Installation" target="_blank" rel="noopener">successful</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- 安装完成Homebrew后，需将其所在路径插入到 PATH 环境变量的最前面，即在您所登录用户的 ~/.profile 文件末尾加上这一行：</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h2 id="安装Python3"><a href="#安装Python3" class="headerlink" title="安装Python3"></a>安装Python3</h2><ul>
-<li>在终端输入brew install python3，等待安装完成。</li>
-<li>在终端输入Python3，会显示出Python3的版本。</li>
-</ul>
+<p>export PATH=”/usr/local/opt/python/libexec/bin:$PATH”</p>
+<pre><code>
+## 安装Python3  
+  - 在终端输入brew install python3，等待安装完成。
+  - 在终端输入Python3，会显示出Python3的版本。
 
+  ---------------
+
+  **参考网站：**
+  1. 在Mac OS X上安装Python 3, https://pythonguidecn.readthedocs.io/zh/latest/starting/install3/osx.html#install3-osx
+  2. Python最佳实践指南！, https://pythonguidecn.readthedocs.io/zh/latest/index.html</code></pre>
       
     </div>
     
@@ -576,7 +583,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -598,7 +605,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -631,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检查Mac自带Python版本"><span class="nav-number">2.</span> <span class="nav-text">检查Mac自带Python版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装X-code"><span class="nav-number">3.</span> <span class="nav-text">安装X-code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Brew"><span class="nav-number">4.</span> <span class="nav-text">安装Brew</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Python3"><span class="nav-number">5.</span> <span class="nav-text">安装Python3</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检查Mac自带Python版本"><span class="nav-number">2.</span> <span class="nav-text">检查Mac自带Python版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装X-code"><span class="nav-number">3.</span> <span class="nav-text">安装X-code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Brew"><span class="nav-number">4.</span> <span class="nav-text">安装Brew</span></a></li></ol></div>
             
 
           </div>
@@ -665,7 +672,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">7.3k</span>
+    <span title="Site words total count">7.8k</span>
   
 </div>
 

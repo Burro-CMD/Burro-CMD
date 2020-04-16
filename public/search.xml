@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Mac下多个MP3文件合并成一个MP3文件]]></title>
+    <url>%2F2020%2F04%2F16%2FMac%E4%B8%8B%E5%A4%9A%E4%B8%AAMP3%E6%96%87%E4%BB%B6%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP3%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[目录 前言 命令 踩坑 继续学习 前言 在学习GE时，发现里面的音频内容很好，想下载到手机里听，但是里面的音频已经被分割成多个mp3了，故有了“合并”音频的想法。 命令1234ffmpeg -i "concat:123.mp3|456.mp3" -acodec copy MckayDesign.mp3# -i 代表输入参数 concat:123.mp3|456.mp 代表需要连接到一起的音频文件 -acodec copy MckayDesign.mp3 重新编码并复制到新文件中 踩坑 以上多个mp3文件合并成一个mp3文件，使用的是连接到一起，开始很不了解，命令的含义，导致错误，这里非常感谢simadi博主，他的博客写的很详细，再次感谢。 继续学习 多个mp3混合到一起 12345678910ffmpeg64.exe -i 124.mp3 -i 123.mp3 -filter_complex amix=inputs=2:duration=first:dropout_transition=2 -f mp3 remix.mp3# -i 代表输入参数# -filter_complex ffmpeg 滤镜功能，非常强大，详细请查看文档# amix 是混合多个音频到单个音频输出# inputs=2 代表是2个音频文件，如果更多则代表对应数字# duration 确定最终输出文件的长度# longest(最长)|shortest（最短）|first（第一个文件）# dropout_transitionThe transition time, in seconds, for volume renormalization when an input stream ends. The default value is 2 seconds.# -f mp3 输出文件格式 参考网站： ffmpeg 多个音频合并 截取 拆分: https://www.cnblogs.com/simadi/p/10649345.html FFmpeg官网: http://ffmpeg.org/ffmpeg.html]]></content>
+      <tags>
+        <tag>English Study</tag>
+        <tag>Listening</tag>
+        <tag>ffmpeg</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mac环下Python3定时任务之顺序执行多个py脚本（2）]]></title>
     <url>%2F2020%2F04%2F07%2FMac%E7%8E%AF%E4%B8%8BPython3%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AApy%E8%84%9A%E6%9C%AC%EF%BC%882%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[目录 前言 代码 踩坑 继续学习 前言 因为明天要手动执行多个py脚本来实现自动登录，故有了定时顺序执行多个py脚本的想法。 代码123456789101112131415161718192021222324import osfrom time import sleepfrom selenium import webdriverdef run(): while 1: os.system("python3 ./jxcadautologin.py") # *定时2s后执行* print('Waiting a minute...') sleep(2) os.system("python3 ./51Testingautologin.py") # *定时2s后执行* print('Waiting a minute...') sleep(2) # *定时2s后执行* os.system("python3 ./Pdawikiautologin.py") print('Waiting a minute...，about 24h') sleep(86400)run() 踩坑123os.system("python3 ./jxcadautologin.py")- python3代表使用python3执行脚本，jxcadautologin.py代表需要被执行的脚本。- While 1代表死循环。 继续学习 sleep 分钟、小时的表达方式 def run 函数？ import osfrom time import sleep 参考网站： python 定时任务之顺序执行多个py脚本:https://blog.csdn.net/qq_42677001/article/details/104808213?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5 python顺序执行多个py文件:https://blog.csdn.net/liusarazhang/article/details/78920500]]></content>
+    <content type="text"><![CDATA[目录 前言 代码 踩坑 继续学习 前言 因为每天要手动执行多个py脚本来实现自动登录，故有了定时顺序执行多个py脚本的想法。 代码123456789101112131415161718192021222324import osfrom time import sleepfrom selenium import webdriverdef run(): while 1: os.system("python3 ./jxcadautologin.py") # *定时2s后执行* print('Waiting a minute...') sleep(2) os.system("python3 ./51Testingautologin.py") # *定时2s后执行* print('Waiting a minute...') sleep(2) # *定时2s后执行* os.system("python3 ./Pdawikiautologin.py") print('Waiting a minute...，about 24h') sleep(86400)run() 踩坑123os.system("python3 ./jxcadautologin.py")- python3代表使用python3执行脚本，jxcadautologin.py代表需要被执行的脚本。- While 1代表死循环。 继续学习 sleep 分钟、小时的表达方式 def run 函数？ import osfrom time import sleep 参考网站： python 定时任务之顺序执行多个py脚本:https://blog.csdn.net/qq_42677001/article/details/104808213?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5 python顺序执行多个py文件:https://blog.csdn.net/liusarazhang/article/details/78920500]]></content>
       <tags>
         <tag>Selenium</tag>
         <tag>WebDriver</tag>
@@ -12,9 +22,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Mac环境下Crontab定时任务（2）]]></title>
+    <title><![CDATA[Mac环境下Crontab定时任务（3）]]></title>
     <url>%2F2020%2F04%2F07%2FMac%E7%8E%AF%E5%A2%83%E4%B8%8BCrontab%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%883%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[参考网站： Mac下使用crontab来实现定时任务: https://www.cnblogs.com/EasonJim/p/7819635.html]]></content>
       <tags>
         <tag>Python</tag>
         <tag>Crontab</tag>
@@ -65,7 +75,7 @@
   <entry>
     <title><![CDATA[Mac环境下安装Python3]]></title>
     <url>%2F2019%2F08%2F23%2F%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%B8%8A%E5%AE%89%E8%A3%85Python3%2F</url>
-    <content type="text"><![CDATA[欢迎参与讨论，转载请注明出处。 前言 MacOS Mojave:10.14.5 检查Mac自带Python版本 在Launchpad找到终端，输入Python； 终端显示Python2.7.10，按住Control+D来退出Python运行环境。 安装X-code 在终端输入X-code-select –install, 按Enter； 安装完成，在终端输入X-code-select -p来检查Xcode的安装位置，按住Control+D结束命令。 安装Brew 打开Brew官网：https://brew.sh, 在brew官网复制/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)，粘贴到Mac终端，按Enter，安装完成之后显示Installation successful 安装Python3 在终端输入brew install python3，等待安装完成。 在终端输入Python3，会显示出Python3的版本。]]></content>
+    <content type="text"><![CDATA[欢迎参与讨论，转载请注明出处。 前言 MacOS Mojave:10.14.5 检查Mac自带Python版本 在Launchpad找到终端，输入Python； 终端显示Python2.7.10，按住Control+D来退出Python运行环境。 安装X-code 在终端输入X-code-select –install, 按Enter； 安装完成，在终端输入X-code-select -p来检查Xcode的安装位置，按住Control+D结束命令。 如果已经安装了Xcode，请不要再安装 OSX-GCC-Installer。两者结合可能会引发难以诊断的问题。 安装Brew 打开Brew官网：https://brew.sh, -e "$(curl -fsSLsuccessful1- 安装完成Homebrew后，需将其所在路径插入到 PATH 环境变量的最前面，即在您所登录用户的 ~/.profile 文件末尾加上这一行： export PATH=”/usr/local/opt/python/libexec/bin:$PATH” ## 安装Python3 - 在终端输入brew install python3，等待安装完成。 - 在终端输入Python3，会显示出Python3的版本。 --------------- **参考网站：** 1. 在Mac OS X上安装Python 3, https://pythonguidecn.readthedocs.io/zh/latest/starting/install3/osx.html#install3-osx 2. Python最佳实践指南！, https://pythonguidecn.readthedocs.io/zh/latest/index.html]]></content>
       <categories>
         <category>Tech</category>
       </categories>
