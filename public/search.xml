@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MAC环境下多个MP4视频合并成一个MP4视频]]></title>
+    <url>%2F2020%2F05%2F19%2FMAC%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%A4%9A%E4%B8%AAMP4%E8%A7%86%E9%A2%91%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP4%E8%A7%86%E9%A2%91%2F</url>
+    <content type="text"><![CDATA[目录 前言 命令 前言 在学习GE时，发现里面的视频内容很好，想下载到手机里听，但是里面的视频已经被分割成多个MP4了，故有了“合并”视频的想法。 命令 方法1:使用ts拼接，优点：速度快，文件小。 先将mp4转化为同样编码形式的ts流，因为ts流是可以concate的，先把mp4封装成ts，然后concate ts流，最后再把ts流转化为mp4。 123ffmpeg -i 1.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 1.tsffmpeg -i 2.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 2.tsffmpeg -i "concat:1.ts|2.ts" -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4 方法2:使用mpeg拼接，缺点：速度慢，文件大。 将mp4先转码为mpeg文件，mpeg是支持简单拼接的，然后再转回mp4。 123ffmpeg -i 1.mp4 -qscale 4 1.mpgffmpeg -i 2.mp4 -qscale 4 2.mpgcat 1.mpg 2.mpg | ffmpeg -f mpeg -i - -qscale 6 -vcodec mpeg4 output.mp4 参考网站： 使用FFmpeg合并MP4视频： 、https://blog.csdn.net/east196/article/details/79821361]]></content>
+      <tags>
+        <tag>English Study</tag>
+        <tag>Listening</tag>
+        <tag>ffmpeg</tag>
+        <tag>MP4</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mac下多个MP3文件合并成一个MP3文件]]></title>
     <url>%2F2020%2F04%2F16%2FMac%E4%B8%8B%E5%A4%9A%E4%B8%AAMP3%E6%96%87%E4%BB%B6%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP3%E6%96%87%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[目录 前言 命令 踩坑 继续学习 前言 在学习GE时，发现里面的音频内容很好，想下载到手机里听，但是里面的音频已经被分割成多个mp3了，故有了“合并”音频的想法。 命令1234ffmpeg -i "concat:123.mp3|456.mp3" -acodec copy MckayDesign.mp3# -i 代表输入参数 concat:123.mp3|456.mp 代表需要连接到一起的音频文件 -acodec copy MckayDesign.mp3 重新编码并复制到新文件中 踩坑 以上多个mp3文件合并成一个mp3文件，使用的是连接到一起，开始很不了解，命令的含义，导致错误，这里非常感谢simadi博主，他的博客写的很详细，再次感谢。 继续学习 多个mp3混合到一起 12345678910ffmpeg64.exe -i 124.mp3 -i 123.mp3 -filter_complex amix=inputs=2:duration=first:dropout_transition=2 -f mp3 remix.mp3# -i 代表输入参数# -filter_complex ffmpeg 滤镜功能，非常强大，详细请查看文档# amix 是混合多个音频到单个音频输出# inputs=2 代表是2个音频文件，如果更多则代表对应数字# duration 确定最终输出文件的长度# longest(最长)|shortest（最短）|first（第一个文件）# dropout_transitionThe transition time, in seconds, for volume renormalization when an input stream ends. The default value is 2 seconds.# -f mp3 输出文件格式 参考网站： ffmpeg 多个音频合并 截取 拆分: https://www.cnblogs.com/simadi/p/10649345.html FFmpeg官网: http://ffmpeg.org/ffmpeg.html]]></content>
@@ -73,6 +84,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[申请美国EVUS（签证更新电子系统）]]></title>
+    <url>%2F2019%2F08%2F23%2F%E7%BE%8E%E5%9B%BDEVUS%2F</url>
+    <content type="text"><![CDATA[前言 Q&amp;A Q: 什么是签证更新电子系统? A: 签证更新电子系统，或EVUS，是一个电子平台，用于确定持有十年B1, B2或B1/B2访客签证的旅客因临时商务或旅游前来美国旅行的资格。符合这一描述的旅客必须在前往美国之前进行EVUS登记。 Q: 如果我已经得到了签证，为什么还需要进行EVUS登记？ A: 如果您持有B1，B2或B1/B2的访客签证前往美国进行短期商务和旅游，根据美国移民法的规定，您必须完成EVUS登记。 Q: EVUS和签证之间的区别是什么？ A: EVUS登记不是签证。它不符合律或法规的要求以替代美国签证，当根据美国法律要求签证时。计划前往美国访问的旅客出行必须持有有效的B1，B2或B1 / B2级访客签证。身为中华人民共和国公民/国民的旅客仅持有有效的十年B1，B2或B1 / B2级签证，必须在EVUS上申请登记，并且在行前持有签证。如果您已在EVUS登记并抵达机场，该旅客将可以前往美国。其他任何非B1，B2或B1 / B2具有十年有效期类型的签证，不需要申请EVUS登记。 Q: 如何重新注册您的签证更新电子系统? A: 成功的EVUS注册通常有效期为两年（自注册之日起），或护照到期的前六个月，或签证到期（以较早者为准）。 如果您的EVUS即将到期或者已经到期的原因是由于护照有效期的问题而引起的，那么请联系您的护照签发机构或离您最近的中国大使馆，并按照他们的指示更新您的护照。然后用您的新护照信息重新注册EVUS。如果您的EVUS即将到期或者已经到期的原因是由于EVUS两年有效期而引起的，请登陆我们的官方网站https://www.evus.gov. 重新注册一份 新的EVUS. 申请流程Step1点击右上角“中国”，选择中文系统。 Step2点击“新登记申请” Step3选择“个人登记”，如有同行的人，可选择“团体登记”。请确保已拥有登记所需的前提材料 Step4点击同意免责声明，点击“下一步”。 Step5填写旅行文件信息，点击“下一步” Step6填写登记者相关信息。 Step7填写旅行信息，如果在美国没有联系人，可以写unknown。 1Noted: 因为是商务，所以这边我是写了美国的联系人的，个人觉得这很大程度上能够快速通过的原因之一。 Step8资格问题，如实填写 Step9检查登记，全面检查一下信息是否正确。 Step10提交登记申请。如果没有问题，就可以点击“提交”申请。 Step11等待处理 Step12查询EVUS申请状态。 Step13登记成功。我是过了5分钟就通过了，下面是申请通过的图片 参考网站： EVUS官网：https://www.evus.gov 美国驻华大使馆和领事馆：https://china.usembassy-china.org.cn/zh/visas-zh/nonimmigrant-visas-zh/evus-zh/ 贴吧：https://tieba.baidu.com/p/4879012773]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>EVUS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mac环境下安装Python3]]></title>
     <url>%2F2019%2F08%2F23%2F%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%B8%8A%E5%AE%89%E8%A3%85Python3%2F</url>
     <content type="text"><![CDATA[欢迎参与讨论，转载请注明出处。 前言 MacOS Mojave:10.14.5 检查Mac自带Python版本 在Launchpad找到终端，输入Python； 终端显示Python2.7.10，按住Control+D来退出Python运行环境。 安装X-code 在终端输入X-code-select –install, 按Enter； 安装完成，在终端输入X-code-select -p来检查Xcode的安装位置，按住Control+D结束命令。 如果已经安装了Xcode，请不要再安装 OSX-GCC-Installer。两者结合可能会引发难以诊断的问题。 安装Brew 打开Brew官网：https://brew.sh, -e "$(curl -fsSLsuccessful1- 安装完成Homebrew后，需将其所在路径插入到 PATH 环境变量的最前面，即在您所登录用户的 ~/.profile 文件末尾加上这一行： export PATH=”/usr/local/opt/python/libexec/bin:$PATH” ## 安装Python3 - 在终端输入brew install python3，等待安装完成。 - 在终端输入Python3，会显示出Python3的版本。 --------------- **参考网站：** 1. 在Mac OS X上安装Python 3, https://pythonguidecn.readthedocs.io/zh/latest/starting/install3/osx.html#install3-osx 2. Python最佳实践指南！, https://pythonguidecn.readthedocs.io/zh/latest/index.html]]></content>
@@ -83,17 +105,6 @@
         <tag>Python</tag>
         <tag>X-code</tag>
         <tag>Brew</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[申请美国EVUS（签证更新电子系统）]]></title>
-    <url>%2F2019%2F08%2F23%2F%E7%BE%8E%E5%9B%BDEVUS%2F</url>
-    <content type="text"><![CDATA[前言 Q&amp;A Q: 什么是签证更新电子系统? A: 签证更新电子系统，或EVUS，是一个电子平台，用于确定持有十年B1, B2或B1/B2访客签证的旅客因临时商务或旅游前来美国旅行的资格。符合这一描述的旅客必须在前往美国之前进行EVUS登记。 Q: 如果我已经得到了签证，为什么还需要进行EVUS登记？ A: 如果您持有B1，B2或B1/B2的访客签证前往美国进行短期商务和旅游，根据美国移民法的规定，您必须完成EVUS登记。 Q: EVUS和签证之间的区别是什么？ A: EVUS登记不是签证。它不符合律或法规的要求以替代美国签证，当根据美国法律要求签证时。计划前往美国访问的旅客出行必须持有有效的B1，B2或B1 / B2级访客签证。身为中华人民共和国公民/国民的旅客仅持有有效的十年B1，B2或B1 / B2级签证，必须在EVUS上申请登记，并且在行前持有签证。如果您已在EVUS登记并抵达机场，该旅客将可以前往美国。其他任何非B1，B2或B1 / B2具有十年有效期类型的签证，不需要申请EVUS登记。 Q: 如何重新注册您的签证更新电子系统? A: 成功的EVUS注册通常有效期为两年（自注册之日起），或护照到期的前六个月，或签证到期（以较早者为准）。 如果您的EVUS即将到期或者已经到期的原因是由于护照有效期的问题而引起的，那么请联系您的护照签发机构或离您最近的中国大使馆，并按照他们的指示更新您的护照。然后用您的新护照信息重新注册EVUS。如果您的EVUS即将到期或者已经到期的原因是由于EVUS两年有效期而引起的，请登陆我们的官方网站https://www.evus.gov. 重新注册一份 新的EVUS. 申请流程Step1点击右上角“中国”，选择中文系统。 Step2点击“新登记申请” Step3选择“个人登记”，如有同行的人，可选择“团体登记”。请确保已拥有登记所需的前提材料 Step4点击同意免责声明，点击“下一步”。 Step5填写旅行文件信息，点击“下一步” Step6填写登记者相关信息。 Step7填写旅行信息，如果在美国没有联系人，可以写unknown。 1Noted: 因为是商务，所以这边我是写了美国的联系人的，个人觉得这很大程度上能够快速通过的原因之一。 Step8资格问题，如实填写 Step9检查登记，全面检查一下信息是否正确。 Step10提交登记申请。如果没有问题，就可以点击“提交”申请。 Step11等待处理 Step12查询EVUS申请状态。 Step13登记成功。我是过了5分钟就通过了，下面是申请通过的图片 参考网站： EVUS官网：https://www.evus.gov 美国驻华大使馆和领事馆：https://china.usembassy-china.org.cn/zh/visas-zh/nonimmigrant-visas-zh/evus-zh/ 贴吧：https://tieba.baidu.com/p/4879012773]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>EVUS</tag>
       </tags>
   </entry>
   <entry>
