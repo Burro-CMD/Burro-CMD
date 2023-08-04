@@ -1,365 +1,721 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>压凹_Indent</title>
-      <link href="/burro-cmd.github.io/2023/08/02/%E5%8E%8B%E5%87%B9_Indent/"/>
-      <url>/burro-cmd.github.io/2023/08/02/%E5%8E%8B%E5%87%B9_Indent/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>压凹：</strong>通过使用厚度和间隙值进来生成特征，压凹特征在目标实体上生成与所选工具实体的轮廓非常接近的等距袋套或突起特征。</p><p><strong>要求：</strong></p><ul><li>目标实体和工具实体其中必须有一个为实体。</li><li>如想压凹，目标实体必须与工具实体接触，或者间隙值必须允许穿越目标实体的突起。</li><li>如想切除，目标实体和工具实体不必相互接触，但间隙值必须大到可足够生成与目标实体的交叉。</li><li>如想以曲面工具实体压凹（切除）实体，曲面必须与实体完全相交。</li></ul><div align=center><img src="图片1.png" width = 100%></div><p><left>版权声明：本文为博主原创文章，转载请注明出处。</left></p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Atom中Markdown语法</title>
+    <url>/burro-cmd.github.io/2019/08/14/Atom%E4%B8%ADMarkdown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><figure class="highlight clean"><table><tr><td class="code"><pre><span class="line">一级标题       语法：#+空格</span><br><span class="line">二级标题       语法：##+空格</span><br><span class="line">三级标题       语法：###+空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><figure class="highlight"><table><tr><td class="code"><pre><span class="line">无序列表        语法：-+空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ul>
+<li>无序1</li>
+<li>无序2</li>
+<li>无序3</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">有序列表        语法：1.+空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ol>
+<li>有序1</li>
+<li>有序2</li>
+<li>有序3</li>
+</ol>
+<h4 id="引用或强调"><a href="#引用或强调" class="headerlink" title="引用或强调"></a>引用或强调</h4><figure class="highlight autohotkey"><table><tr><td class="code"><pre><span class="line"><span class="title">引用或强调      语法:</span> ```内容```和&gt; +空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">静夜思</span><br><span class="line">窗前看月光</span><br><span class="line">抬头望山月</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>静夜思<br>窗前看月光<br>抬头望山月</p>
+</blockquote>
+<h4 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h4><figure class="highlight asciidoc"><table><tr><td class="code"><pre><span class="line">加粗           语法: <span class="strong">**内容**</span>或者<span class="emphasis">__内容__</span></span><br></pre></td></tr></table></figure>
+<p>效果：我是需要<strong>加粗的内容</strong></p>
+<h4 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h4><figure class="highlight asciidoc"><table><tr><td class="code"><pre><span class="line">斜体          语法: <span class="strong">*内容*</span>或者<span class="emphasis">__内容__</span></span><br></pre></td></tr></table></figure>
+<p>效果：我是需要<em>斜体的内容</em></p>
+<h4 id="斜粗体"><a href="#斜粗体" class="headerlink" title="斜粗体"></a>斜粗体</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">斜粗体        语法：<span class="strong">**<span class="emphasis">*内容*</span>**</span>或者<span class="strong">__<span class="emphasis">_内容_</span>__</span></span><br></pre></td></tr></table></figure>
+<p>我是需要___粗斜体的内容___</p>
+<h4 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h4><figure class="highlight"><table><tr><td class="code"><pre><span class="line">删除线        语法：~~删除线~~</span><br></pre></td></tr></table></figure>
+<p>效果：<del>删除线</del></p>
+<h4 id="粗斜体删除"><a href="#粗斜体删除" class="headerlink" title="粗斜体删除"></a>粗斜体删除</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">粗斜体删除     语法：<span class="strong">**<span class="emphasis">*~~粗斜体删除~~*</span>**</span>或者~~<span class="strong">**<span class="emphasis">*粗斜体删除*</span>**</span>~~</span><br></pre></td></tr></table></figure>
+<p>我是需要***<del>粗斜体删除的内容</del>***</p>
+<h4 id="插入分割线"><a href="#插入分割线" class="headerlink" title="插入分割线"></a>插入分割线</h4><figure class="highlight asciidoc"><table><tr><td class="code"><pre><span class="line">插入分割线     语法：---或者<span class="emphasis">____</span>或者<span class="strong">***</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h2><hr>
+<hr>
+<h4 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">下划线        语法：<span class="tag">&lt;<span class="name">u</span>&gt;</span>这是需要下划线的内容<span class="tag">&lt;/<span class="name">u</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果：<u>这是需要下划线的内容</u></p>
+<h4 id="文本居中"><a href="#文本居中" class="headerlink" title="文本居中"></a>文本居中</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">文本居中      语法：<span class="tag">&lt;<span class="name">center</span>&gt;</span>这是要居中的文本内容<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果：<center>这是要居中的文本内容</center></p>
+<h4 id="Todo列表"><a href="#Todo列表" class="headerlink" title="Todo列表"></a>Todo列表</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">Todo列表     语法：</span><br><span class="line">                * <span class="selector-attr">[x]</span> Java</span><br><span class="line">                * <span class="selector-attr">[ ]</span> C</span><br><span class="line">                * <span class="selector-attr">[ ]</span> C++</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Java</li>
+<li><input disabled="" type="checkbox"> C</li>
+<li><input disabled="" type="checkbox"> C++</li>
+</ul>
+<h4 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">换行         语法：</span><br><span class="line">                方法1.连续两个空格+回车</span><br><span class="line">                方法2.使用html语言换行标签<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果：<br>这是第一行，<br>这是第二行。<br>这是第一行，<br>这是第二行。</p>
+<h4 id="添加注脚"><a href="#添加注脚" class="headerlink" title="添加注脚"></a>添加注脚</h4><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">添加注脚     语法：<span class="keyword">this</span> <span class="keyword">is</span> a basic footnot [^<span class="number">1</span>]</span><br><span class="line">说明：需要在站点根目录下安装插件：</span><br><span class="line">命令：npm install hexo-<span class="built_in">ref</span>erence --save</span><br></pre></td></tr></table></figure>
+<p>效果：       this is a basic footnot <sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这是脚注">[1]</span></a></sup></p>
+<h4 id="缩进字符"><a href="#缩进字符" class="headerlink" title="缩进字符"></a>缩进字符</h4><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">缩进字符     语法：</span><br><span class="line">               <span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span>不断行的空白格<span class="symbol">&amp;nbsp;</span>或<span class="symbol">&amp;#160;</span></span><br><span class="line">               <span class="symbol">&amp;ensp;</span><span class="symbol">&amp;ensp;</span>半角的空白<span class="symbol">&amp;ensp;</span>或<span class="symbol">&amp;#8194;</span></span><br><span class="line">               <span class="symbol">&amp;emsp;</span><span class="symbol">&amp;emsp;</span>全角的空白<span class="symbol">&amp;emsp;</span>或<span class="symbol">&amp;#8195;</span></span><br></pre></td></tr></table></figure>
+<p>效果：<br>&nbsp;&nbsp;不断行的空白格&nbsp;或&#160;<br>&ensp;&ensp;半角的空白&ensp;或&#8194;<br>&emsp;&emsp;全角的空白&emsp;或&#8195;</p>
+<h4 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h4><figure class="highlight r"><table><tr><td class="code"><pre><span class="line">特殊符号     语法：<span class="punctuation">\</span><span class="punctuation">\</span>    反斜线</span><br><span class="line">                 <span class="punctuation">\</span>`    反引号</span><br><span class="line">                 \*    星号</span><br><span class="line">                 \_    底线</span><br><span class="line">                 \&#123;\&#125;    花括号</span><br><span class="line">                 \[\]    方括号</span><br><span class="line">                 \(\)    括弧</span><br><span class="line">                 \#    井号</span><br><span class="line">                 \+    加号</span><br><span class="line">                 \-    减号</span><br><span class="line">                 \.    英文句点</span><br><span class="line">                 \!    惊叹号</span><br></pre></td></tr></table></figure>
+<p>效果：<br>\    反斜线<br>`    反引号<br>*    星号<br>_    底线<br>{}    花括号<br>[]    方括号<br>()    括弧<br>#    井号<br>+    加号<br>-    减号<br>.    英文句点<br>!    惊叹号</p>
+<h4 id="存放代码块"><a href="#存放代码块" class="headerlink" title="存放代码块"></a>存放代码块</h4><figure class="highlight arcade"><table><tr><td class="code"><pre><span class="line">存放代码块    语法：<span class="string">``</span><span class="string">`代码`</span><span class="string">``</span></span><br></pre></td></tr></table></figure>
+
+
+<p>效果：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">windows.<span class="property">onload</span>=<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;反斜杠```用来存放代码&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line">表格      语法：</span><br><span class="line">          &lt;center&gt;行<span class="number">1</span> |&lt;center&gt;行<span class="number">2</span> |&lt;center&gt;行<span class="number">3</span></span><br><span class="line">            <span class="symbol">:----</span>:    |  <span class="symbol">:----</span>:   | <span class="symbol">:----</span>:</span><br><span class="line">            小程序     |   vue     | 菜鸟</span><br><span class="line">            search    |   工程师   | 码农</span><br><span class="line">&lt;center&gt;表示表头居中，<span class="symbol">:</span>在最左边表示左对齐，<span class="symbol">:</span>在最右边表示右对齐，左右两边都有<span class="symbol">:</span>表示居中。</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<center>行1 |<center>行2 |<center>行3
+:----: | :----: | :----:
+小程序 | vue | 菜鸟
+search | web前段开发工程师 | 码农
+
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><figure class="highlight scss"><table><tr><td class="code"><pre><span class="line">行内形式     语法：<span class="selector-attr">[链接文字]</span>(链接网址“标题”)</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ol>
+<li>Example: This is an <a href="http://example.com/" title="With a Title">example link</a>.</li>
+<li>Example: This is an <a href="www.baidu.com">百度</a>.</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">参考形式     语法：</span><br><span class="line">               <span class="selector-attr">[链接文字]</span><span class="selector-attr">[name]</span></span><br><span class="line"></span><br><span class="line">               <span class="selector-attr">[name]</span>: link <span class="string">&quot;Title&quot;</span></span><br></pre></td></tr></table></figure>
+<p>语法示例：</p>
+<figure class="highlight prolog"><table><tr><td class="code"><pre><span class="line">我使用 [<span class="symbol">Google</span>][<span class="number">1</span>] 进行学术搜索多一些,使用 [百度][<span class="number">2</span>]进行日常搜索多一些，很少使用[<span class="symbol">Bing</span>][<span class="number">3</span>] .</span><br><span class="line">我不能一边使用 [百度搜索][<span class="number">2</span>] 一边骂他不如 [<span class="symbol">Google</span>][<span class="number">1</span>]，我们需要学会的是利用资源。</span><br><span class="line"></span><br><span class="line">[<span class="number">1</span>]: https://www.google.com/ <span class="string">&quot;Google&quot;</span></span><br><span class="line">[<span class="number">2</span>]: https://www.baidu.com/ <span class="string">&quot;Baidu Search&quot;</span></span><br><span class="line">[<span class="number">3</span>]: https://cn.bing.com/ <span class="string">&quot;Bing Search&quot;</span></span><br></pre></td></tr></table></figure>
+<p>效果：<br>早饭后，我打开 <a href="https://dict.eudic.net/ting" title="每日英语听力 - 欧路词典">每日英语听力</a> 学习英语。遇到不懂的英语单词，我借助 <a href="https://dict.eudic.net/" title="《欧路词典》在线版">欧路在线词典</a><br>查看释义并加入生词本，方便使用 <a href="https://www.eudic.net/v4/en/app/eudic" title="《欧路词典》英语翻译软件官方主页">客户端</a> 随时记忆单词。</p>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">插入互联网上图片         语法：</span><br><span class="line">                      我的笔记本上装了 openSUSE Leap:</span><br><span class="line">                      ![opensuse-laptop](https:<span class="regexp">//</span>www.opensuse.org<span class="regexp">/build/im</span>ages/opensuse-laptop.gif)</span><br><span class="line">说明：鼠标右键复制图片地址。</span><br></pre></td></tr></table></figure>
+<p>效果：<br>我在我的笔记本上装了 openSUSE Leap:<br><img src="https://www.opensuse.org/build/images/opensuse-laptop.gif" alt="opensuse-laptop"></p>
+<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">行内形式：    语法：![alt <span class="built_in">text</span>](图片网址 <span class="string">&quot;Title&quot;</span>)</span><br><span class="line">说明：alt <span class="built_in">text</span> 是替换文本；alt 属性规定在图像无法显示时的替代文本。虽然 alt <span class="built_in">text</span> 可以不填，但推荐还是填上。</span><br><span class="line">Title 是可选项，可以不屑，鼠标悬停与图片上会出现的标题文字。</span><br></pre></td></tr></table></figure>
+<p>效果：<br><img src="http://a4.att.hudong.com/53/00/19300001232398130994005711200.jpg" alt="百度" title="百度"></p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这是脚注<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
       <categories>
-          
-          <category> Solidworks </category>
-          
+        <category>Tech</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 特征 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/burro-cmd.github.io/2023/02/10/hello-world/"/>
-      <url>/burro-cmd.github.io/2023/02/10/hello-world/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac系统清理</title>
-      <link href="/burro-cmd.github.io/2020/08/26/Mac%20%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%90%86%E6%96%B9%E6%B3%95/"/>
-      <url>/burro-cmd.github.io/2020/08/26/Mac%20%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%90%86%E6%96%B9%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="查看系统的文件占用详情"><a href="#查看系统的文件占用详情" class="headerlink" title="查看系统的文件占用详情"></a>查看系统的文件占用详情</h4><figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">方法：</span><br><span class="line"><span class="keyword">Step</span> <span class="number">1</span>: 查看整个电脑的文件大小分布，命令：du -sh *</span><br><span class="line"><span class="keyword">Step</span> <span class="number">2</span>: 查看较大的文件，定位到较大文件下</span><br><span class="line">        <span class="number">1</span>）cd ~/<span class="keyword">Library</span></span><br><span class="line">        <span class="number">2</span>) du -d <span class="number">1</span> -h</span><br><span class="line"><span class="keyword">Step</span> <span class="number">3</span>: 有针对性的删除文件</span><br></pre></td></tr></table></figure><h3 id="一、首先打开终端，输入命令"><a href="#一、首先打开终端，输入命令" class="headerlink" title="一、首先打开终端，输入命令"></a>一、首先打开终端，输入命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">du</span> -sh *</span><br></pre></td></tr></table></figure><blockquote><p>这个命令用来查看根目录下所有文件的大小分布, 下图所示：</p></blockquote><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">CNWUXNBMAC1504</span>:~ <span class="string">guh4</span>$ <span class="string">du</span> -<span class="string">sh</span> *</span><br><span class="line">  <span class="string">0B</span>-</span><br><span class="line">  <span class="string">0B</span>-<span class="string">help</span></span><br><span class="line"><span class="string">1</span>.<span class="string">0M</span><span class="string">Applications</span></span><br><span class="line"> <span class="string">22G</span><span class="string">Desktop</span></span><br><span class="line"><span class="string">5</span>.<span class="string">2M</span><span class="string">Documents</span></span><br><span class="line"> <span class="string">20K</span><span class="string">Downloads</span></span><br><span class="line"><span class="string">8</span>.<span class="string">6G</span><span class="string">Library</span></span><br><span class="line">  <span class="string">0B</span><span class="string">Movies</span></span><br><span class="line"><span class="string">240M</span><span class="string">Music</span></span><br><span class="line"> <span class="string">85M</span><span class="string">Pictures</span></span><br><span class="line"><span class="string">8</span>.<span class="string">0K</span><span class="string">Public</span></span><br><span class="line"> <span class="string">20M</span><span class="string">PycharmProjects</span></span><br><span class="line">  <span class="string">0B</span><span class="string">debug</span>.<span class="string">log</span></span><br><span class="line"><span class="string">1</span>.<span class="string">7M</span><span class="built_in">get-pip.py</span></span><br><span class="line">  <span class="string">0B</span><span class="string">getmacapps_temp</span></span><br><span class="line">  <span class="string">0B</span><span class="string">hf</span>.<span class="string">txt</span></span><br><span class="line"><span class="string">8</span>.<span class="string">0K</span><span class="string">time</span>.<span class="string">txt</span></span><br><span class="line"><span class="string">CNWUXNBMAC1504</span>:~ <span class="string">guh4</span>$</span><br></pre></td></tr></table></figure><p>其中，可以很容易能看到每个文件的大小占比，快速定位到Library文件。</p><h3 id="输入命令，进入到Library文件路径"><a href="#输入命令，进入到Library文件路径" class="headerlink" title="输入命令，进入到Library文件路径"></a>输入命令，进入到Library文件路径</h3><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> ~<span class="string">/Library</span></span><br></pre></td></tr></table></figure><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CNWUXNBMAC1504:~ guh4<span class="variable">$</span> <span class="built_in">cd</span> ~/Library</span><br><span class="line">CNWUXNBMAC1504:Library guh4<span class="variable">$</span></span><br></pre></td></tr></table></figure><p>然后，查看Library下所有文件大小分布<br>输入：</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">du</span> -d <span class="number">1</span> -h</span><br></pre></td></tr></table></figure><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">CNWUXNBMAC1504<span class="function">:Library</span> guh4$ du -d 1 -h</span><br><span class="line"> 92K<span class="string">./Receipts</span></span><br><span class="line">2.6G<span class="string">./Application</span> Support</span><br><span class="line">3.1M<span class="string">./Assistant</span></span><br><span class="line">8.0K<span class="string">./Autosave</span> Information</span><br><span class="line">1.6M<span class="string">./Saved</span> Application State</span><br><span class="line">184K<span class="string">./IdentityServices</span></span><br><span class="line">140K<span class="string">./WebKit</span></span><br><span class="line">595M<span class="string">./Developer</span></span><br><span class="line"> 11M<span class="string">./Calendars</span></span><br><span class="line">2.9M<span class="string">./Preferences</span></span><br><span class="line"> 16K<span class="string">./studentd</span></span><br><span class="line">1.2M<span class="string">./Messages</span></span><br><span class="line">1.2M<span class="string">./HomeKit</span></span><br><span class="line">8.0K<span class="string">./DES</span></span><br><span class="line"> 18M<span class="string">./Keychains</span></span><br><span class="line">8.0K<span class="string">./Sharing</span></span><br><span class="line">1.4G<span class="string">./Eudb_en</span></span><br><span class="line">  0B<span class="string">./ColorPickers</span></span><br><span class="line">  0B<span class="string">./Application</span> Scripts</span><br><span class="line">  0B<span class="string">./Assistants</span></span><br><span class="line">  0B<span class="string">./Python</span></span><br><span class="line"> 15M<span class="string">./Mail</span></span><br><span class="line">  0B<span class="string">./Compositions</span></span><br><span class="line">  0B<span class="string">./GameKit</span></span><br><span class="line"> 24K<span class="string">./Google</span></span><br><span class="line">256K<span class="string">./LanguageModeling</span></span><br><span class="line">  0B<span class="string">./Favorites</span></span><br><span class="line">428K<span class="string">./Passes</span></span><br><span class="line"> 28K<span class="string">./Edraw</span></span><br><span class="line">  0B<span class="string">./Family</span></span><br><span class="line">  0B<span class="string">./iTunes</span></span><br><span class="line">  0B<span class="string">./iMovie</span></span><br><span class="line">236K<span class="string">./Library</span></span><br><span class="line">8.0K<span class="string">./FontCollections</span></span><br><span class="line">  0B<span class="string">./Sounds</span></span><br><span class="line"> 92K<span class="string">./Personas</span></span><br><span class="line"> 44K<span class="string">./com.apple.internal.ck</span></span><br><span class="line">412K<span class="string">./Printers</span></span><br><span class="line">888K<span class="string">./SyncedPreferences</span></span><br><span class="line">  0B<span class="string">./Audio</span></span><br><span class="line">  0B<span class="string">./Keyboard</span> Layouts</span><br><span class="line">8.0K<span class="string">./Logs</span></span><br><span class="line">  0B<span class="string">./Internet</span> Plug-Ins</span><br><span class="line"> 80K<span class="string">./FrontBoard</span></span><br><span class="line">  0B<span class="string">./Voices</span></span><br><span class="line">  0B<span class="string">./News</span></span><br><span class="line">3.5M<span class="string">./Accounts</span></span><br><span class="line"> 49M<span class="string">./Safari</span></span><br><span class="line">  0B<span class="string">./Colors</span></span><br><span class="line">  0B<span class="string">./PreferencePanes</span></span><br><span class="line"> 24K<span class="string">./FileProvider</span></span><br><span class="line">1.5M<span class="string">./Mobile</span> Documents</span><br><span class="line">200K<span class="string">./PubSub</span></span><br><span class="line"> 11M<span class="string">./Suggestions</span></span><br><span class="line"> 16K<span class="string">./LaunchAgents</span></span><br><span class="line">874M<span class="string">./Group</span> Containers</span><br><span class="line">296K<span class="string">./Dictionaries</span></span><br><span class="line">2.9G<span class="string">./Containers</span></span><br><span class="line">  0B<span class="string">./ScreenRecordings</span></span><br><span class="line"> 61M<span class="string">./Atlas</span></span><br><span class="line">648K<span class="string">./sapi</span></span><br><span class="line">8.0K<span class="string">./PersonalizationPortrait</span></span><br><span class="line">  0B<span class="string">./Fonts</span></span><br><span class="line"> 41M<span class="string">./XMind</span></span><br><span class="line">2.1M<span class="string">./KeyboardServices</span></span><br><span class="line">3.8M<span class="string">./Metadata</span></span><br><span class="line">  0B<span class="string">./Screen</span> Savers</span><br><span class="line">  0B<span class="string">./CallServices</span></span><br><span class="line"> 12K<span class="string">./Spelling</span></span><br><span class="line">  0B<span class="string">./SafariSafeBrowsing</span></span><br><span class="line">  0B<span class="string">./Input</span> Methods</span><br><span class="line">136K<span class="string">./Cookies</span></span><br><span class="line"> 16K<span class="string">./Services</span></span><br><span class="line"> 20K<span class="string">./Keyboard</span></span><br><span class="line"> 28K<span class="string">./CoreFollowUp</span></span><br><span class="line"> 30M<span class="string">./Caches</span></span><br><span class="line">8.6G.</span><br><span class="line">CNWUXNBMAC1504<span class="function">:Library</span> guh4$</span><br></pre></td></tr></table></figure><p>按照上述方法，查看容量较大的文件夹，再查看文件大小分布</p><p>Reference:</p><ol><li>Mac系统清理、占用空间大、空间不够、查看系统文件大小分布, <a href="https://www.cnblogs.com/yajunLi/p/7008578.html">https://www.cnblogs.com/yajunLi/p/7008578.html</a></li></ol>]]></content>
-      
-      
+      <tags>
+        <tag>Atom</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Atom使用</title>
+    <url>/burro-cmd.github.io/2019/08/14/Atom%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="Packages"><a href="#Packages" class="headerlink" title="Packages"></a>Packages</h3><p><strong>1. Simplified-chinese-menu</strong><br>Atom 的简体中文汉化语言包,目前最全的汉化包。包含菜单汉化、右键菜单汉化以及设置汉化。</p>
+<p><strong>2. Emmet</strong><br>前端开发都懂得的，html 代码补全，使用方法还有文档可以查阅 emmet使用文档。</p>
+<p><strong>3. File-icons</strong><br>不同格式的文本显示 不同颜色和类型的图标，便于分辨。</p>
+<p><strong>4. Color-picker</strong><br>顾名思义，颜色采集器，非常清晰好用。快捷键 ctrl+alt+option 启动使用。</p>
+<p><strong>5. Atom-beautify</strong><br>美化格式插件，规范缩进，删除多余空行等等。快捷键 ctrl+option+b 启动使用。</p>
+<p><strong>6. Markdown-scroll-sync</strong><br>atom 自带markdown 预览功能，快捷键 ctrl+shift+m 会打开两个面板的视图，但文档太长的时候，不会跟着同步滚动，这个插件就是做这个用的，滚动文档的时候预览内容同步滚动。</p>
+<p><strong>7. Minimap</strong><br>编辑器右侧小面板，快捷展示当前编辑的内容在整个文档中的位置。同 sublime 极为相似。</p>
+<p><strong>8. Docblocker</strong><br>便捷的添加注释代码，&#x2F;** 按 tab 键即添加注释代码快。</p>
+<p><strong>9. Atom-terminal-panel</strong><br>快速调取使用终端面板，快捷键 ctrl+ `启动，底部工具条的 + 也可以点击展示终端面板。</p>
+<p><strong>10. Activate-power-mode</strong><br>输入时有震撼效果，这个插件纯粹是用来炫技的，只适合拿来玩玩，长时间使用，我相信你的视力一定会下降的，不要怪我没提醒你哦。</p>
+<p><strong>11. Gist-it</strong><br>快速分享代码到gist.github.com</p>
+<p><strong>12. Sync-settings</strong><br>插件备份、按键绑定备份</p>
+<p><strong>13. Browser-plus</strong><br>编辑器内置浏览器</p>
+<p><strong>14. Linter</strong><br>代码校验工具</p>
+<p><strong>15. Autocomplete-paths</strong><br>填写路径的时候有提示</p>
+<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shft+cmd+p</td>
+<td>命令版(可以看到所有快捷键)</td>
+</tr>
+<tr>
+<td>alt + shift + s</td>
+<td>查看文件相关语言的代码块(snippet)</td>
+</tr>
+<tr>
+<td>cmd + f</td>
+<td>搜索当前文件</td>
+</tr>
+<tr>
+<td>cmd+shift+f</td>
+<td>搜索整个项目</td>
+</tr>
+<tr>
+<td>alt + cmd + [</td>
+<td>代码折叠, 我不喜欢用</td>
+</tr>
+<tr>
+<td>alt + cmd + ]</td>
+<td>代码展开</td>
+</tr>
+<tr>
+<td>cmd + &#x2F;</td>
+<td>快速注释当前行</td>
+</tr>
+<tr>
+<td>cmd + [</td>
+<td>代码左缩进</td>
+</tr>
+<tr>
+<td>cmd + ]</td>
+<td>代码右缩进</td>
+</tr>
+<tr>
+<td>cmd + b</td>
+<td>快速跳转打开的文件</td>
+</tr>
+<tr>
+<td>alt+B或alt+left</td>
+<td>光标按单词左移</td>
+</tr>
+<tr>
+<td>alt+F或alt+right</td>
+<td>光标按单词右移</td>
+</tr>
+<tr>
+<td>cmd+right或ctrl+e</td>
+<td>光标移动到行最右最后一个非空字符</td>
+</tr>
+<tr>
+<td>cmd+left或ctrl+a</td>
+<td>光标移动到行最左第一个非空字符</td>
+</tr>
+<tr>
+<td>cmd + up</td>
+<td>光标移动到文件头</td>
+</tr>
+<tr>
+<td>cmd + down</td>
+<td>贯标移动到文件尾</td>
+</tr>
+<tr>
+<td>ctrl + g</td>
+<td>行跳转, 语法为行号:列号</td>
+</tr>
+<tr>
+<td>cmd + r</td>
+<td>按当前文件方法跳转</td>
+</tr>
+<tr>
+<td>cmd + t</td>
+<td>全项目模糊查找关键字并跳转</td>
+</tr>
+<tr>
+<td>ctrl + m</td>
+<td>按照括号匹配跳转</td>
+</tr>
+<tr>
+<td>cmd + F2或cmd+fn+f2</td>
+<td>给某一行设置书签显示在行号右侧</td>
+</tr>
+</tbody></table>
+]]></content>
       <categories>
-          
-          <category> Tech </category>
-          
+        <category>Tech</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Mac Clearing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MAC环境下多个MP4视频合并成一个MP4视频</title>
-      <link href="/burro-cmd.github.io/2020/05/19/MAC%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%A4%9A%E4%B8%AAMP4%E8%A7%86%E9%A2%91%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP4%E8%A7%86%E9%A2%91/"/>
-      <url>/burro-cmd.github.io/2020/05/19/MAC%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%A4%9A%E4%B8%AAMP4%E8%A7%86%E9%A2%91%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP4%E8%A7%86%E9%A2%91/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li>前言</li><li>命令</li></ul><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  在学习GE时，发现里面的视频内容很好，想下载到手机里听，但是里面的视频已经被分割成多个MP4了，故有了“合并”视频的想法。</p><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p>  方法1:使用ts拼接，优点：速度快，文件小。<br>  先将mp4转化为同样编码形式的ts流，因为ts流是可以concate的，先把mp4封装成ts，然后concate ts流，最后再把ts流转化为mp4。</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i <span class="number">1</span>.mp4 -vcodec <span class="keyword">copy</span> -acodec <span class="keyword">copy</span> -vbsf h264_mp4toannexb <span class="number">1</span>.<span class="keyword">ts</span></span><br><span class="line">ffmpeg -i <span class="number">2</span>.mp4 -vcodec <span class="keyword">copy</span> -acodec <span class="keyword">copy</span> -vbsf h264_mp4toannexb <span class="number">2</span>.<span class="keyword">ts</span></span><br><span class="line">ffmpeg -i <span class="string">&quot;concat:1.ts|2.ts&quot;</span> -acodec <span class="keyword">copy</span> -vcodec <span class="keyword">copy</span> -absf aac_adtstoasc output.mp4</span><br></pre></td></tr></table></figure><p>  方法2:使用mpeg拼接，缺点：速度慢，文件大。<br>  将mp4先转码为mpeg文件，mpeg是支持简单拼接的，然后再转回mp4。</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ffmpeg</span> -i <span class="number">1</span>.mp4 -qscale <span class="number">4</span> <span class="number">1</span>.mpg</span><br><span class="line"><span class="attribute">ffmpeg</span> -i <span class="number">2</span>.mp4 -qscale <span class="number">4</span> <span class="number">2</span>.mpg</span><br><span class="line"><span class="attribute">cat</span> <span class="number">1</span>.mpg <span class="number">2</span>.mpg | ffmpeg -f mpeg -i - -qscale <span class="number">6</span> -vcodec mpeg4 output.mp4</span><br></pre></td></tr></table></figure><hr><p><strong>参考网站：</strong></p><ol><li>使用FFmpeg合并MP4视频： 、<a href="https://blog.csdn.net/east196/article/details/79821361">https://blog.csdn.net/east196/article/details/79821361</a></li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> English Study </tag>
-            
-            <tag> Listening </tag>
-            
-            <tag> ffmpeg </tag>
-            
-            <tag> MP4 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac下多个MP3文件合并成一个MP3文件</title>
-      <link href="/burro-cmd.github.io/2020/04/16/Mac%E4%B8%8B%E5%A4%9A%E4%B8%AAMP3%E6%96%87%E4%BB%B6%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP3%E6%96%87%E4%BB%B6/"/>
-      <url>/burro-cmd.github.io/2020/04/16/Mac%E4%B8%8B%E5%A4%9A%E4%B8%AAMP3%E6%96%87%E4%BB%B6%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP3%E6%96%87%E4%BB%B6/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li>前言</li><li>命令</li><li>踩坑</li><li>继续学习</li></ul><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  在学习GE时，发现里面的音频内容很好，想下载到手机里听，但是里面的音频已经被分割成多个mp3了，故有了“合并”音频的想法。</p><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i <span class="string">&quot;concat:123.mp3|456.mp3&quot;</span> -acodec <span class="keyword">copy</span> MckayDesign.mp3</span><br><span class="line"><span class="comment"># -i 代表输入参数</span></span><br><span class="line">  concat:<span class="number">123.</span>mp3|<span class="number">456.</span>mp 代表需要连接到一起的音频文件</span><br><span class="line">  -acodec <span class="keyword">copy</span> MckayDesign.mp3 重新编码并复制到新文件中</span><br></pre></td></tr></table></figure><h3 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h3><p>  以上多个mp3文件合并成一个mp3文件，使用的是连接到一起，开始很不了解，命令的含义，导致错误，这里非常感谢simadi博主，他的博客写的很详细，再次感谢。</p><h3 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h3><p>  多个mp3混合到一起</p><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg64.exe -i <span class="number">124.</span>mp3 -i <span class="number">123.</span>mp3 -filter_complex amix=inputs=<span class="number">2</span>:duration=<span class="keyword">first</span>:dropout_transition=<span class="number">2</span> -f mp3 remix.mp3</span><br><span class="line"><span class="comment"># -i 代表输入参数</span></span><br><span class="line"><span class="comment"># -filter_complex ffmpeg 滤镜功能，非常强大，详细请查看文档</span></span><br><span class="line"><span class="comment"># amix 是混合多个音频到单个音频输出</span></span><br><span class="line"><span class="comment"># inputs=2 代表是2个音频文件，如果更多则代表对应数字</span></span><br><span class="line"><span class="comment"># duration 确定最终输出文件的长度</span></span><br><span class="line"><span class="comment"># longest(最长)|shortest（最短）|first（第一个文件）</span></span><br><span class="line"><span class="comment"># dropout_transition</span></span><br><span class="line">The transition <span class="built_in">time</span>, <span class="keyword">in</span> <span class="built_in">seconds</span>, <span class="keyword">for</span> volume renormalization when <span class="keyword">an</span> input stream <span class="keyword">ends</span>. The default <span class="built_in">value</span> is <span class="number">2</span> <span class="built_in">seconds</span>.</span><br><span class="line"><span class="comment"># -f mp3  输出文件格式</span></span><br></pre></td></tr></table></figure><hr><p><strong>参考网站：</strong></p><ol><li>ffmpeg 多个音频合并 截取 拆分: <a href="https://www.cnblogs.com/simadi/p/10649345.html">https://www.cnblogs.com/simadi/p/10649345.html</a></li><li>FFmpeg官网: <a href="http://ffmpeg.org/ffmpeg.html">http://ffmpeg.org/ffmpeg.html</a></li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> English Study </tag>
-            
-            <tag> Listening </tag>
-            
-            <tag> ffmpeg </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac环下Python3定时任务之顺序执行多个py脚本（2）</title>
-      <link href="/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E4%B8%8BPython3%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AApy%E8%84%9A%E6%9C%AC%EF%BC%882%EF%BC%89/"/>
-      <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E4%B8%8BPython3%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AApy%E8%84%9A%E6%9C%AC%EF%BC%882%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li>前言</li><li>代码</li><li>踩坑</li><li>继续学习</li></ul><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  因为每天要手动执行多个py脚本来实现自动登录，故有了定时顺序执行多个py脚本的想法。</p><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line"><span class="selector-tag">from</span> <span class="selector-tag">time</span> import sleep</span><br><span class="line"><span class="selector-tag">from</span> selenium import webdriver</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def run():</span><br><span class="line">while <span class="number">1</span>:</span><br><span class="line">os.<span class="built_in">system</span>(<span class="string">&quot;python3 ./jxcadautologin.py&quot;</span>)</span><br><span class="line"></span><br><span class="line">    # *定时<span class="number">2s</span>后执行*</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Waiting a minute...&#x27;</span>)</span><br><span class="line"><span class="built_in">sleep</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">os.<span class="built_in">system</span>(<span class="string">&quot;python3 ./51Testingautologin.py&quot;</span>)</span><br><span class="line"></span><br><span class="line">    # *定时<span class="number">2s</span>后执行*</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Waiting a minute...&#x27;</span>)</span><br><span class="line"><span class="built_in">sleep</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    # *定时<span class="number">2s</span>后执行*</span><br><span class="line">    os.<span class="built_in">system</span>(<span class="string">&quot;python3 ./Pdawikiautologin.py&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Waiting a minute...，about 24h&#x27;</span>)</span><br><span class="line"><span class="built_in">sleep</span>(<span class="number">86400</span>)</span><br><span class="line"><span class="built_in">run</span>()</span><br></pre></td></tr></table></figure><h3 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h3><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">os.<span class="built_in">system</span>(<span class="string">&quot;python3 ./jxcadautologin.py&quot;</span>)</span><br><span class="line">- <span class="keyword">python3</span>代表使用<span class="keyword">python3</span>执行脚本，jxcadautologin.<span class="keyword">py</span>代表需要被执行的脚本。</span><br><span class="line">- While <span class="number">1</span>代表死循环。</span><br></pre></td></tr></table></figure><h3 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h3><ul><li>sleep 分钟、小时的表达方式</li><li>def run 函数？</li><li>import os<br>from time import sleep</li></ul><hr><p><strong>参考网站：</strong></p><ol><li>python 定时任务之顺序执行多个py脚本:<br><a href="https://blog.csdn.net/qq_42677001/article/details/104808213?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5">https://blog.csdn.net/qq_42677001/article/details/104808213?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5</a></li><li>python顺序执行多个py文件:<a href="https://blog.csdn.net/liusarazhang/article/details/78920500">https://blog.csdn.net/liusarazhang/article/details/78920500</a></li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Selenium </tag>
-            
-            <tag> WebDriver </tag>
-            
-            <tag> os.system </tag>
-            
-            <tag> While 1 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac环境下Crontab定时任务（3）</title>
-      <link href="/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8BCrontab%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%883%EF%BC%89/"/>
-      <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8BCrontab%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%883%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr><p><strong>参考网站：</strong></p><ol><li>Mac下使用crontab来实现定时任务: <a href="https://www.cnblogs.com/EasonJim/p/7819635.html">https://www.cnblogs.com/EasonJim/p/7819635.html</a></li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-            <tag> Crontab </tag>
-            
-            <tag> Crontab -e </tag>
-            
-            <tag> Crontab -l </tag>
-            
-            <tag> crontab </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac环境下 下载在线m3u8视频</title>
-      <link href="/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%20%E5%9C%A8%E7%BA%BFm3u8%E8%A7%86%E9%A2%91/"/>
-      <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%20%E5%9C%A8%E7%BA%BFm3u8%E8%A7%86%E9%A2%91/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li>前言</li><li>环境搭建</li><li>ffmpeg模块下载</li><li>下载在线m3u8视频指令</li><li>实例测试</li><li>继续学习</li></ul><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>   最近在忙项目上的事，但本人又想参加Solidworks的线上培训，虽然后面有视频回放的地址，但我还是想在离线的时候随时去观看视频，故有了这份教程。</p><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><ul><li>系统环境：MacOS Mojave</li><li>预先安装homebrew</li></ul><h4 id="ffmpeg模块下载"><a href="#ffmpeg模块下载" class="headerlink" title="ffmpeg模块下载"></a>ffmpeg模块下载</h4><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>ffmpeg</span><br></pre></td></tr></table></figure><h4 id="下载在线m3u8视频指令"><a href="#下载在线m3u8视频指令" class="headerlink" title="下载在线m3u8视频指令"></a>下载在线m3u8视频指令</h4><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i https:<span class="regexp">//</span>host/really.m3u8 -c copy your.mp4</span><br></pre></td></tr></table></figure><p><a href="https://host/really.m3u8%E6%9B%BF%E6%8D%A2%E5%9F%8Eurl">https://host/really.m3u8替换城url</a><br>your.mp4 替换成自定义名称.mp4</p><h3 id="实例测试"><a href="#实例测试" class="headerlink" title="实例测试"></a>实例测试</h3><p>Step 1: 在Chrome 浏览器打开一个视频回放页面，打开开发者工具<br>        Command + R 刷新页面<br><img src="https://img-blog.csdnimg.cn/20190502152230285.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NDMTk5MV8=,size_16,color_FFFFFF,t_70"><br>Step 2: 在右边菜单栏的“Network”，刷新页面，在Filter里输入m3u8搜索，<br><img src="https://img-blog.csdnimg.cn/20190719002715881.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3BldHJlbDIwMTU=,size_16,color_FFFFFF,t_70"><br>Step 3: 右击复制链接<br><img src="https://img-blog.csdnimg.cn/20190719002743655.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3BldHJlbDIwMTU=,size_16,color_FFFFFF,t_70"><br>Step 4:打开终端，输入如下指令并执行</p><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i <span class="comment">(Step 3中复制的链接)</span> -c copy <span class="comment">(自定义名字)</span>.mp<span class="number">4</span></span><br></pre></td></tr></table></figure><p><img src="https://upload-images.jianshu.io/upload_images/5862483-88af04513433df06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/646/format/webp"><br>下载好的视频<br><img src="https://upload-images.jianshu.io/upload_images/5862483-0bb473ad51c4d7df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/850/format/webp"></p><h3 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h3><ul><li>下载的视频保存路径设定</li><li>指令查询<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i <span class="string">&quot;https://test.test/test.m3u8&quot;</span> -vcodec <span class="keyword">copy</span> -acodec <span class="keyword">copy</span> -absf aac_adtstoasc <span class="keyword">test</span>.mp4</span><br></pre></td></tr></table></figure></li></ul><hr><p><strong>参考网站：</strong></p><ol><li>mac或linux环境下用python爬取m3u8格式视频并将其ts文件合成转存为mp4文件：<br><a href="https://blog.csdn.net/Jo_Andy/article/details/89714777">https://blog.csdn.net/Jo_Andy/article/details/89714777</a></li><li>经验分享：使用谷歌浏览器下载想要的任意网页视频&#x2F;音乐的方法：<br><a href="https://blog.csdn.net/CC1991_/article/details/89761779?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2">https://blog.csdn.net/CC1991_/article/details/89761779?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2</a></li><li>[实用技能] 下载“一直播”回放视频（通过FFmpeg下载网页中m3u8流媒体视频，在线视频解析下载）：<br><a href="https://blog.csdn.net/petrel2015/article/details/96469169">https://blog.csdn.net/petrel2015/article/details/96469169</a></li><li>下载“一直播”回放视频到我的Mac（通过FFmpeg下载网页中m3u8流媒体视频）：<br><a href="https://blog.csdn.net/Jessica__Chan/article/details/104245423">https://blog.csdn.net/Jessica__Chan/article/details/104245423</a></li><li>ffmpeg官网：<a href="http://ffmpeg.org/ffmpeg.html">http://ffmpeg.org/ffmpeg.html</a></li></ol>]]></content>
-      
-      
+      <tags>
+        <tag>Atom</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac系统清理</title>
+    <url>/burro-cmd.github.io/2020/08/26/Mac%20%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%90%86%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="查看系统的文件占用详情"><a href="#查看系统的文件占用详情" class="headerlink" title="查看系统的文件占用详情"></a>查看系统的文件占用详情</h4><figure class="highlight coq"><table><tr><td class="code"><pre><span class="line">方法：</span><br><span class="line"><span class="keyword">Step</span> <span class="number">1</span>: 查看整个电脑的文件大小分布，命令：du -sh *</span><br><span class="line"><span class="keyword">Step</span> <span class="number">2</span>: 查看较大的文件，定位到较大文件下</span><br><span class="line">        <span class="number">1</span>）cd ~/<span class="keyword">Library</span></span><br><span class="line">        <span class="number">2</span>) du -d <span class="number">1</span> -h</span><br><span class="line"><span class="keyword">Step</span> <span class="number">3</span>: 有针对性的删除文件</span><br></pre></td></tr></table></figure>
+<h3 id="一、首先打开终端，输入命令"><a href="#一、首先打开终端，输入命令" class="headerlink" title="一、首先打开终端，输入命令"></a>一、首先打开终端，输入命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">du</span> -sh *</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这个命令用来查看根目录下所有文件的大小分布, 下图所示：</p>
+</blockquote>
+<figure class="highlight dsconfig"><table><tr><td class="code"><pre><span class="line"><span class="string">CNWUXNBMAC1504</span>:~ <span class="string">guh4</span>$ <span class="string">du</span> -<span class="string">sh</span> *</span><br><span class="line">  <span class="string">0B</span>	-</span><br><span class="line">  <span class="string">0B</span>	-<span class="string">help</span></span><br><span class="line"><span class="string">1</span>.<span class="string">0M</span>	<span class="string">Applications</span></span><br><span class="line"> <span class="string">22G</span>	<span class="string">Desktop</span></span><br><span class="line"><span class="string">5</span>.<span class="string">2M</span>	<span class="string">Documents</span></span><br><span class="line"> <span class="string">20K</span>	<span class="string">Downloads</span></span><br><span class="line"><span class="string">8</span>.<span class="string">6G</span>	<span class="string">Library</span></span><br><span class="line">  <span class="string">0B</span>	<span class="string">Movies</span></span><br><span class="line"><span class="string">240M</span>	<span class="string">Music</span></span><br><span class="line"> <span class="string">85M</span>	<span class="string">Pictures</span></span><br><span class="line"><span class="string">8</span>.<span class="string">0K</span>	<span class="string">Public</span></span><br><span class="line"> <span class="string">20M</span>	<span class="string">PycharmProjects</span></span><br><span class="line">  <span class="string">0B</span>	<span class="string">debug</span>.<span class="string">log</span></span><br><span class="line"><span class="string">1</span>.<span class="string">7M</span>	<span class="built_in">get-pip.py</span></span><br><span class="line">  <span class="string">0B</span>	<span class="string">getmacapps_temp</span></span><br><span class="line">  <span class="string">0B</span>	<span class="string">hf</span>.<span class="string">txt</span></span><br><span class="line"><span class="string">8</span>.<span class="string">0K</span>	<span class="string">time</span>.<span class="string">txt</span></span><br><span class="line"><span class="string">CNWUXNBMAC1504</span>:~ <span class="string">guh4</span>$</span><br></pre></td></tr></table></figure>
+<p>其中，可以很容易能看到每个文件的大小占比，快速定位到Library文件。</p>
+<h3 id="输入命令，进入到Library文件路径"><a href="#输入命令，进入到Library文件路径" class="headerlink" title="输入命令，进入到Library文件路径"></a>输入命令，进入到Library文件路径</h3><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="keyword">cd</span> ~<span class="string">/Library</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">CNWUXNBMAC1504:~ guh4<span class="variable">$</span> <span class="built_in">cd</span> ~/Library</span><br><span class="line">CNWUXNBMAC1504:Library guh4<span class="variable">$</span></span><br></pre></td></tr></table></figure>
+<p>然后，查看Library下所有文件大小分布<br>输入：</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">du</span> -d <span class="number">1</span> -h</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">CNWUXNBMAC1504<span class="function">:Library</span> guh4$ du -d 1 -h</span><br><span class="line"> 92K	<span class="string">./Receipts</span></span><br><span class="line">2.6G	<span class="string">./Application</span> Support</span><br><span class="line">3.1M	<span class="string">./Assistant</span></span><br><span class="line">8.0K	<span class="string">./Autosave</span> Information</span><br><span class="line">1.6M	<span class="string">./Saved</span> Application State</span><br><span class="line">184K	<span class="string">./IdentityServices</span></span><br><span class="line">140K	<span class="string">./WebKit</span></span><br><span class="line">595M	<span class="string">./Developer</span></span><br><span class="line"> 11M	<span class="string">./Calendars</span></span><br><span class="line">2.9M	<span class="string">./Preferences</span></span><br><span class="line"> 16K	<span class="string">./studentd</span></span><br><span class="line">1.2M	<span class="string">./Messages</span></span><br><span class="line">1.2M	<span class="string">./HomeKit</span></span><br><span class="line">8.0K	<span class="string">./DES</span></span><br><span class="line"> 18M	<span class="string">./Keychains</span></span><br><span class="line">8.0K	<span class="string">./Sharing</span></span><br><span class="line">1.4G	<span class="string">./Eudb_en</span></span><br><span class="line">  0B	<span class="string">./ColorPickers</span></span><br><span class="line">  0B	<span class="string">./Application</span> Scripts</span><br><span class="line">  0B	<span class="string">./Assistants</span></span><br><span class="line">  0B	<span class="string">./Python</span></span><br><span class="line"> 15M	<span class="string">./Mail</span></span><br><span class="line">  0B	<span class="string">./Compositions</span></span><br><span class="line">  0B	<span class="string">./GameKit</span></span><br><span class="line"> 24K	<span class="string">./Google</span></span><br><span class="line">256K	<span class="string">./LanguageModeling</span></span><br><span class="line">  0B	<span class="string">./Favorites</span></span><br><span class="line">428K	<span class="string">./Passes</span></span><br><span class="line"> 28K	<span class="string">./Edraw</span></span><br><span class="line">  0B	<span class="string">./Family</span></span><br><span class="line">  0B	<span class="string">./iTunes</span></span><br><span class="line">  0B	<span class="string">./iMovie</span></span><br><span class="line">236K	<span class="string">./Library</span></span><br><span class="line">8.0K	<span class="string">./FontCollections</span></span><br><span class="line">  0B	<span class="string">./Sounds</span></span><br><span class="line"> 92K	<span class="string">./Personas</span></span><br><span class="line"> 44K	<span class="string">./com.apple.internal.ck</span></span><br><span class="line">412K	<span class="string">./Printers</span></span><br><span class="line">888K	<span class="string">./SyncedPreferences</span></span><br><span class="line">  0B	<span class="string">./Audio</span></span><br><span class="line">  0B	<span class="string">./Keyboard</span> Layouts</span><br><span class="line">8.0K	<span class="string">./Logs</span></span><br><span class="line">  0B	<span class="string">./Internet</span> Plug-Ins</span><br><span class="line"> 80K	<span class="string">./FrontBoard</span></span><br><span class="line">  0B	<span class="string">./Voices</span></span><br><span class="line">  0B	<span class="string">./News</span></span><br><span class="line">3.5M	<span class="string">./Accounts</span></span><br><span class="line"> 49M	<span class="string">./Safari</span></span><br><span class="line">  0B	<span class="string">./Colors</span></span><br><span class="line">  0B	<span class="string">./PreferencePanes</span></span><br><span class="line"> 24K	<span class="string">./FileProvider</span></span><br><span class="line">1.5M	<span class="string">./Mobile</span> Documents</span><br><span class="line">200K	<span class="string">./PubSub</span></span><br><span class="line"> 11M	<span class="string">./Suggestions</span></span><br><span class="line"> 16K	<span class="string">./LaunchAgents</span></span><br><span class="line">874M	<span class="string">./Group</span> Containers</span><br><span class="line">296K	<span class="string">./Dictionaries</span></span><br><span class="line">2.9G	<span class="string">./Containers</span></span><br><span class="line">  0B	<span class="string">./ScreenRecordings</span></span><br><span class="line"> 61M	<span class="string">./Atlas</span></span><br><span class="line">648K	<span class="string">./sapi</span></span><br><span class="line">8.0K	<span class="string">./PersonalizationPortrait</span></span><br><span class="line">  0B	<span class="string">./Fonts</span></span><br><span class="line"> 41M	<span class="string">./XMind</span></span><br><span class="line">2.1M	<span class="string">./KeyboardServices</span></span><br><span class="line">3.8M	<span class="string">./Metadata</span></span><br><span class="line">  0B	<span class="string">./Screen</span> Savers</span><br><span class="line">  0B	<span class="string">./CallServices</span></span><br><span class="line"> 12K	<span class="string">./Spelling</span></span><br><span class="line">  0B	<span class="string">./SafariSafeBrowsing</span></span><br><span class="line">  0B	<span class="string">./Input</span> Methods</span><br><span class="line">136K	<span class="string">./Cookies</span></span><br><span class="line"> 16K	<span class="string">./Services</span></span><br><span class="line"> 20K	<span class="string">./Keyboard</span></span><br><span class="line"> 28K	<span class="string">./CoreFollowUp</span></span><br><span class="line"> 30M	<span class="string">./Caches</span></span><br><span class="line">8.6G	.</span><br><span class="line">CNWUXNBMAC1504<span class="function">:Library</span> guh4$</span><br></pre></td></tr></table></figure>
+<p>按照上述方法，查看容量较大的文件夹，再查看文件大小分布</p>
+<p>Reference:</p>
+<ol>
+<li>Mac系统清理、占用空间大、空间不够、查看系统文件大小分布, <a href="https://www.cnblogs.com/yajunLi/p/7008578.html">https://www.cnblogs.com/yajunLi/p/7008578.html</a></li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> Tech </category>
-          
+        <category>Tech</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> ffmpeg </tag>
-            
-            <tag> homebrew </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac环境下利用Python + Selenium实现自动登录签到（1）</title>
-      <link href="/burro-cmd.github.io/2020/03/17/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%88%A9%E7%94%A8Python%20+%20Selenium%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%E7%AD%BE%E5%88%B0%EF%BC%881%EF%BC%89/"/>
-      <url>/burro-cmd.github.io/2020/03/17/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%88%A9%E7%94%A8Python%20+%20Selenium%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%E7%AD%BE%E5%88%B0%EF%BC%881%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li>前言</li><li>环境搭建</li><li>Selenium模块下载</li><li>webdriver下载</li><li>实例测试</li><li>踩坑</li><li>继续学习</li></ul><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>   目前在找资料时，由于论坛对新人有些限制，不能访问某些主题，故有了此教程，以此来实现每天自动登录签到来增长积分和威望。</p><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>   Python + Selenium + Webdriver实现自动登录并签到（后续更新Mac下定时任务）</p><h4 id="Selenium模块下载"><a href="#Selenium模块下载" class="headerlink" title="Selenium模块下载"></a>Selenium模块下载</h4><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install Selenium</span><br><span class="line">pip install -i https:<span class="regexp">//</span>pypi.doubanio.com<span class="regexp">/simple/</span> selenium <span class="comment">#备用地址</span></span><br></pre></td></tr></table></figure><h4 id="Webdriver下载"><a href="#Webdriver下载" class="headerlink" title="Webdriver下载"></a>Webdriver下载</h4><ul><li>Chrome驱动地址：<a href="https://npm.taobao.org/mirrors/chromedriver%EF%BC%8C">https://npm.taobao.org/mirrors/chromedriver，</a><br>或<a href="http://chromedriver.storage.googleapis.com/index.html">http://chromedriver.storage.googleapis.com/index.html</a></li><li>Firefox驱动地址：<a href="https://github.com/mozilla/geckodriver/releases">https://github.com/mozilla/geckodriver/releases</a></li><li>IE驱动地址：<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/</a></li><li>Safari驱动地址：<a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">https://webkit.org/blog/6900/webdriver-support-in-safari-10/</a></li></ul><h5 id="查看Chrome版本"><a href="#查看Chrome版本" class="headerlink" title="查看Chrome版本"></a>查看Chrome版本</h5><ol><li>打开Chrome浏览器输入：Chrome:&#x2F;&#x2F;settings&#x2F;help查看当前Chrome版本。<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165648225-1548130970.png"></li><li>下载对应的Chromedriver版本</li></ol><ul><li>下载地址，见上面的Chrome驱动下载地址。<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165254531-1908392009.png"></li><li>选择Mac系统的Chromedriver<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165332216-144100406.png"></li><li>直接解压该文件<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165613118-589868811.png"></li></ul><ol start="3"><li>把Chromedriver放在usr&#x2F;local&#x2F;bin目录下</li></ol><ul><li>这个目录是隐藏的，所以随便打开一个Finder，然后Command+Shift+G<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165943949-1335683902.png"></li><li>直接把Chromedriver放进来<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122170048462-614100250.png"></li></ul><ol start="4"><li>代码测试   <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># Author:Burro-CMD</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium import WebDriver</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome()</span><br><span class="line">driver.<span class="built_in">get</span>(<span class="string">&quot;http://www.baidu.com&quot;</span>)</span><br></pre></td></tr></table></figure>   如下图所示，出现‘Chrome正受到自动测试软件的控制’，就说明已经安装成功了。<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122170340498-1705999559.png"></li></ol><h3 id="实例测试"><a href="#实例测试" class="headerlink" title="实例测试"></a>实例测试</h3><p>   利用Python + Selenium + Webdriver实现自动登录掌上百科并签到。<br>   代码如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">denglu_luntan</span>(<span class="params">driver, user, pwd</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;登录论坛</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    利用 WebDriver 找到登陆窗口模拟登陆操作</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">        driver：初始化的 webdriver</span></span><br><span class="line"><span class="string">        user：用户名</span></span><br><span class="line"><span class="string">        pwd：登陆密码</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns：</span></span><br><span class="line"><span class="string">        无，仅单独抽取执行登陆操作</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    user_box = driver.find_element_by_name(<span class="string">&#x27;username&#x27;</span>)</span><br><span class="line">    user_box.send_keys(user)</span><br><span class="line">    passwd_box = driver.find_element_by_name(<span class="string">&#x27;password&#x27;</span>)</span><br><span class="line">    passwd_box.send_keys(pwd)</span><br><span class="line">    <span class="comment"># time.sleep(2)</span></span><br><span class="line">    load_box = driver.find_element_by_css_selector(<span class="string">&#x27;.pn.vm&#x27;</span>)</span><br><span class="line">    load_box.click()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">do_sign</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;执行签到操作</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    利用 WebDriver 找到签到的表情和输入框，并执行签到操作</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">        无</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns：</span></span><br><span class="line"><span class="string">        无，执行签到操作后正常退出</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    driver = webdriver.Chrome()</span><br><span class="line">    driver.set_window_position(<span class="number">20</span>,<span class="number">40</span>) <span class="comment">#设置窗口的位置</span></span><br><span class="line">    driver.set_window_size(<span class="number">1000</span>,<span class="number">600</span>) <span class="comment">#设置窗口的尺寸</span></span><br><span class="line"></span><br><span class="line">    driver.get(<span class="string">&#x27;https://www.pdawiki.com/forum/forum.php&#x27;</span>)</span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    denglu_luntan(driver, <span class="string">&#x27;你的用户名&#x27;</span>, <span class="string">&#x27;你的密码&#x27;</span>)</span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 跳转到每日签到</span></span><br><span class="line">    qiandao_png = driver.find_element_by_id(<span class="string">&#x27;mn_N462e&#x27;</span>)</span><br><span class="line">    qiandao_png.click()</span><br><span class="line">    <span class="comment"># 选择心情图片</span></span><br><span class="line">    xin_qing = driver.find_element_by_id(<span class="string">&#x27;kx&#x27;</span>)</span><br><span class="line">    xin_qing.click()</span><br><span class="line">    <span class="comment"># 选择想说模式</span></span><br><span class="line">    duanyu_input = driver.find_element_by_id(<span class="string">&#x27;todaysay&#x27;</span>)</span><br><span class="line">    <span class="comment"># 输入想说的内容</span></span><br><span class="line">    duanyu_input.send_keys(<span class="string">&#x27;撸起袖子加油干，未来是你们的&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 找到&quot;开始签到&quot;按钮</span></span><br><span class="line">    btn_png = driver.find_element_by_xpath(</span><br><span class="line">        <span class="string">&#x27;//*[@id=&quot;qiandao&quot;]/table/tbody/tr/td/div/a/img&#x27;</span>)</span><br><span class="line">    <span class="comment"># 寻找XPath时，先搜索定位到&quot;qiandao&quot;，再右击选择copy XPath</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 点击</span></span><br><span class="line">    btn_png.click()</span><br><span class="line">    <span class="comment"># 等待</span></span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 关闭浏览器</span></span><br><span class="line">    driver.quit()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br></pre></td></tr></table></figure><h3 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h3><ol><li>定位元素的确定<br>   本例中使用到的定位有：</li></ol><ul><li>id定位：<br>   find_element_by_id(“id值”)；id属性是唯一的<br><figure class="highlight ceylon"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.find<span class="number">_</span>element<span class="number">_</span><span class="meta">by</span><span class="number">_</span>id(<span class="string">&#x27;mn_N462e&#x27;</span>)</span><br></pre></td></tr></table></figure></li><li>name定位<br>   元素的名称，find_element_by_name(“name值”)；name属性值在当前页面可以不唯一   <figure class="highlight ceylon"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.find<span class="number">_</span>element<span class="number">_</span><span class="meta">by</span><span class="number">_n</span>ame(<span class="string">&#x27;username&#x27;</span>)</span><br></pre></td></tr></table></figure></li><li>XPath定位<br>   利用元素属性定位：   <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　find_element_by_xpath(<span class="string">&quot;.//*[@id=&#x27;Title&#x27;]&quot;</span>)，这里是用的<span class="built_in">id</span>，也可以用元素其他能够唯一标识的属性，不局限于<span class="built_in">id</span>、<span class="built_in">name</span>、<span class="built_in">class</span>这些；*代表的是标签名，不指定时就可以用*代替</span><br></pre></td></tr></table></figure></li></ul><h3 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h3><ul><li>定位元素的其他方式</li><li>Mac下定时任务</li></ul><hr><p><strong>参考网站：</strong></p><ol><li>利用Python + Selenium实现自动登录签到：<br><a href="https://cloud.tencent.com/developer/article/1592562">https://cloud.tencent.com/developer/article/1592562</a></li><li>手把手教你搭建 Selenuim 自动化环境：<br><a href="https://mp.weixin.qq.com/s?__biz=MzI5Nzk2ODc0Ng==&mid=2247483847&idx=1&sn=4c034608dd1f3b4555253d36b5daa371&chksm=ecadb4c2dbda3dd431539f4e63ec731080d3ca6c9393c8277ecabed3d5d48c238362673cc2e4&scene=21#wechat_redirect">https://mp.weixin.qq.com/s?__biz=MzI5Nzk2ODc0Ng==&amp;mid=2247483847&amp;idx=1&amp;sn=4c034608dd1f3b4555253d36b5daa371&amp;chksm=ecadb4c2dbda3dd431539f4e63ec731080d3ca6c9393c8277ecabed3d5d48c238362673cc2e4&amp;scene=21#wechat_redirect</a></li><li>WebDriver–定位元素的8中方式：<a href="https://www.cnblogs.com/i969639/p/11201174.html">https://www.cnblogs.com/i969639/p/11201174.html</a></li><li>Mac安装Chromedriver： <a href="https://www.cnblogs.com/lilyo/p/11959494.html">https://www.cnblogs.com/lilyo/p/11959494.html</a></li><li>Selenium webdriver的环境配置：<a href="https://www.cnblogs.com/qq834761298/p/12169476.html">https://www.cnblogs.com/qq834761298/p/12169476.html</a></li></ol>]]></content>
-      
-      
+      <tags>
+        <tag>Mac Clearing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MAC环境下多个MP4视频合并成一个MP4视频</title>
+    <url>/burro-cmd.github.io/2020/05/19/MAC%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%A4%9A%E4%B8%AAMP4%E8%A7%86%E9%A2%91%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP4%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>前言</li>
+<li>命令</li>
+</ul>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  在学习GE时，发现里面的视频内容很好，想下载到手机里听，但是里面的视频已经被分割成多个MP4了，故有了“合并”视频的想法。</p>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p>  方法1:使用ts拼接，优点：速度快，文件小。<br>  先将mp4转化为同样编码形式的ts流，因为ts流是可以concate的，先把mp4封装成ts，然后concate ts流，最后再把ts流转化为mp4。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">ffmpeg -i <span class="number">1</span>.mp4 -vcodec <span class="keyword">copy</span> -acodec <span class="keyword">copy</span> -vbsf h264_mp4toannexb <span class="number">1</span>.<span class="keyword">ts</span></span><br><span class="line">ffmpeg -i <span class="number">2</span>.mp4 -vcodec <span class="keyword">copy</span> -acodec <span class="keyword">copy</span> -vbsf h264_mp4toannexb <span class="number">2</span>.<span class="keyword">ts</span></span><br><span class="line">ffmpeg -i <span class="string">&quot;concat:1.ts|2.ts&quot;</span> -acodec <span class="keyword">copy</span> -vcodec <span class="keyword">copy</span> -absf aac_adtstoasc output.mp4</span><br></pre></td></tr></table></figure>
+<p>  方法2:使用mpeg拼接，缺点：速度慢，文件大。<br>  将mp4先转码为mpeg文件，mpeg是支持简单拼接的，然后再转回mp4。</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">ffmpeg</span> -i <span class="number">1</span>.mp4 -qscale <span class="number">4</span> <span class="number">1</span>.mpg</span><br><span class="line"><span class="attribute">ffmpeg</span> -i <span class="number">2</span>.mp4 -qscale <span class="number">4</span> <span class="number">2</span>.mpg</span><br><span class="line"><span class="attribute">cat</span> <span class="number">1</span>.mpg <span class="number">2</span>.mpg | ffmpeg -f mpeg -i - -qscale <span class="number">6</span> -vcodec mpeg4 output.mp4</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>参考网站：</strong></p>
+<ol>
+<li>使用FFmpeg合并MP4视频： 、<a href="https://blog.csdn.net/east196/article/details/79821361">https://blog.csdn.net/east196/article/details/79821361</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>English Study</tag>
+        <tag>Listening</tag>
+        <tag>ffmpeg</tag>
+        <tag>MP4</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac下多个MP3文件合并成一个MP3文件</title>
+    <url>/burro-cmd.github.io/2020/04/16/Mac%E4%B8%8B%E5%A4%9A%E4%B8%AAMP3%E6%96%87%E4%BB%B6%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP3%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>前言</li>
+<li>命令</li>
+<li>踩坑</li>
+<li>继续学习</li>
+</ul>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  在学习GE时，发现里面的音频内容很好，想下载到手机里听，但是里面的音频已经被分割成多个mp3了，故有了“合并”音频的想法。</p>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">ffmpeg -i <span class="string">&quot;concat:123.mp3|456.mp3&quot;</span> -acodec <span class="keyword">copy</span> MckayDesign.mp3</span><br><span class="line"><span class="comment"># -i 代表输入参数</span></span><br><span class="line">  concat:<span class="number">123.</span>mp3|<span class="number">456.</span>mp 代表需要连接到一起的音频文件</span><br><span class="line">  -acodec <span class="keyword">copy</span> MckayDesign.mp3 重新编码并复制到新文件中</span><br></pre></td></tr></table></figure>
+
+<h3 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h3><p>  以上多个mp3文件合并成一个mp3文件，使用的是连接到一起，开始很不了解，命令的含义，导致错误，这里非常感谢simadi博主，他的博客写的很详细，再次感谢。</p>
+<h3 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h3><p>  多个mp3混合到一起</p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">ffmpeg64.exe -i <span class="number">124.</span>mp3 -i <span class="number">123.</span>mp3 -filter_complex amix=inputs=<span class="number">2</span>:duration=<span class="keyword">first</span>:dropout_transition=<span class="number">2</span> -f mp3 remix.mp3</span><br><span class="line"><span class="comment"># -i 代表输入参数</span></span><br><span class="line"><span class="comment"># -filter_complex ffmpeg 滤镜功能，非常强大，详细请查看文档</span></span><br><span class="line"><span class="comment"># amix 是混合多个音频到单个音频输出</span></span><br><span class="line"><span class="comment"># inputs=2 代表是2个音频文件，如果更多则代表对应数字</span></span><br><span class="line"><span class="comment"># duration 确定最终输出文件的长度</span></span><br><span class="line"><span class="comment"># longest(最长)|shortest（最短）|first（第一个文件）</span></span><br><span class="line"><span class="comment"># dropout_transition</span></span><br><span class="line">The transition <span class="built_in">time</span>, <span class="keyword">in</span> <span class="built_in">seconds</span>, <span class="keyword">for</span> volume renormalization when <span class="keyword">an</span> input stream <span class="keyword">ends</span>. The default <span class="built_in">value</span> is <span class="number">2</span> <span class="built_in">seconds</span>.</span><br><span class="line"><span class="comment"># -f mp3  输出文件格式</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>参考网站：</strong></p>
+<ol>
+<li>ffmpeg 多个音频合并 截取 拆分: <a href="https://www.cnblogs.com/simadi/p/10649345.html">https://www.cnblogs.com/simadi/p/10649345.html</a></li>
+<li>FFmpeg官网: <a href="http://ffmpeg.org/ffmpeg.html">http://ffmpeg.org/ffmpeg.html</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>English Study</tag>
+        <tag>Listening</tag>
+        <tag>ffmpeg</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac环境下Crontab定时任务（3）</title>
+    <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8BCrontab%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%883%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
+<p><strong>参考网站：</strong></p>
+<ol>
+<li>Mac下使用crontab来实现定时任务: <a href="https://www.cnblogs.com/EasonJim/p/7819635.html">https://www.cnblogs.com/EasonJim/p/7819635.html</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+        <tag>Crontab</tag>
+        <tag>Crontab -e</tag>
+        <tag>Crontab -l</tag>
+        <tag>crontab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac环下Python3定时任务之顺序执行多个py脚本（2）</title>
+    <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E4%B8%8BPython3%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AApy%E8%84%9A%E6%9C%AC%EF%BC%882%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>前言</li>
+<li>代码</li>
+<li>踩坑</li>
+<li>继续学习</li>
+</ul>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  因为每天要手动执行多个py脚本来实现自动登录，故有了定时顺序执行多个py脚本的想法。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">import os</span><br><span class="line"><span class="selector-tag">from</span> <span class="selector-tag">time</span> import sleep</span><br><span class="line"><span class="selector-tag">from</span> selenium import webdriver</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def run():</span><br><span class="line">	while <span class="number">1</span>:</span><br><span class="line">		os.<span class="built_in">system</span>(<span class="string">&quot;python3 ./jxcadautologin.py&quot;</span>)</span><br><span class="line"></span><br><span class="line">    # *定时<span class="number">2s</span>后执行*</span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&#x27;Waiting a minute...&#x27;</span>)</span><br><span class="line">		<span class="built_in">sleep</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">		os.<span class="built_in">system</span>(<span class="string">&quot;python3 ./51Testingautologin.py&quot;</span>)</span><br><span class="line"></span><br><span class="line">    # *定时<span class="number">2s</span>后执行*</span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&#x27;Waiting a minute...&#x27;</span>)</span><br><span class="line">		<span class="built_in">sleep</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    # *定时<span class="number">2s</span>后执行*</span><br><span class="line">    os.<span class="built_in">system</span>(<span class="string">&quot;python3 ./Pdawikiautologin.py&quot;</span>)</span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&#x27;Waiting a minute...，about 24h&#x27;</span>)</span><br><span class="line">		<span class="built_in">sleep</span>(<span class="number">86400</span>)</span><br><span class="line"><span class="built_in">run</span>()</span><br></pre></td></tr></table></figure>
+
+<h3 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h3><figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">os.<span class="built_in">system</span>(<span class="string">&quot;python3 ./jxcadautologin.py&quot;</span>)</span><br><span class="line">- <span class="keyword">python3</span>代表使用<span class="keyword">python3</span>执行脚本，jxcadautologin.<span class="keyword">py</span>代表需要被执行的脚本。</span><br><span class="line">- While <span class="number">1</span>代表死循环。</span><br></pre></td></tr></table></figure>
+
+<h3 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h3><ul>
+<li>sleep 分钟、小时的表达方式</li>
+<li>def run 函数？</li>
+<li>import os<br>from time import sleep</li>
+</ul>
+<hr>
+<p><strong>参考网站：</strong></p>
+<ol>
+<li>python 定时任务之顺序执行多个py脚本:<br><a href="https://blog.csdn.net/qq_42677001/article/details/104808213?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5">https://blog.csdn.net/qq_42677001/article/details/104808213?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5</a></li>
+<li>python顺序执行多个py文件:<a href="https://blog.csdn.net/liusarazhang/article/details/78920500">https://blog.csdn.net/liusarazhang/article/details/78920500</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>Selenium</tag>
+        <tag>WebDriver</tag>
+        <tag>os.system</tag>
+        <tag>While 1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac环境下 下载在线m3u8视频</title>
+    <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%20%E5%9C%A8%E7%BA%BFm3u8%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>前言</li>
+<li>环境搭建</li>
+<li>ffmpeg模块下载</li>
+<li>下载在线m3u8视频指令</li>
+<li>实例测试</li>
+<li>继续学习</li>
+</ul>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>   最近在忙项目上的事，但本人又想参加Solidworks的线上培训，虽然后面有视频回放的地址，但我还是想在离线的时候随时去观看视频，故有了这份教程。</p>
+<h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><ul>
+<li>系统环境：MacOS Mojave</li>
+<li>预先安装homebrew</li>
+</ul>
+<h4 id="ffmpeg模块下载"><a href="#ffmpeg模块下载" class="headerlink" title="ffmpeg模块下载"></a>ffmpeg模块下载</h4><figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>ffmpeg</span><br></pre></td></tr></table></figure>
+
+<h4 id="下载在线m3u8视频指令"><a href="#下载在线m3u8视频指令" class="headerlink" title="下载在线m3u8视频指令"></a>下载在线m3u8视频指令</h4><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">ffmpeg -i https:<span class="regexp">//</span>host/really.m3u8 -c copy your.mp4</span><br></pre></td></tr></table></figure>
+<p><a href="https://host/really.m3u8%E6%9B%BF%E6%8D%A2%E5%9F%8Eurl">https://host/really.m3u8替换城url</a><br>your.mp4 替换成自定义名称.mp4</p>
+<h3 id="实例测试"><a href="#实例测试" class="headerlink" title="实例测试"></a>实例测试</h3><p>Step 1: 在Chrome 浏览器打开一个视频回放页面，打开开发者工具<br>        Command + R 刷新页面<br><img src="https://img-blog.csdnimg.cn/20190502152230285.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NDMTk5MV8=,size_16,color_FFFFFF,t_70"><br>Step 2: 在右边菜单栏的“Network”，刷新页面，在Filter里输入m3u8搜索，<br><img src="https://img-blog.csdnimg.cn/20190719002715881.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3BldHJlbDIwMTU=,size_16,color_FFFFFF,t_70"><br>Step 3: 右击复制链接<br><img src="https://img-blog.csdnimg.cn/20190719002743655.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3BldHJlbDIwMTU=,size_16,color_FFFFFF,t_70"><br>Step 4:打开终端，输入如下指令并执行</p>
+<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line">ffmpeg -i <span class="comment">(Step 3中复制的链接)</span> -c copy <span class="comment">(自定义名字)</span>.mp<span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/5862483-88af04513433df06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/646/format/webp"><br>下载好的视频<br><img src="https://upload-images.jianshu.io/upload_images/5862483-0bb473ad51c4d7df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/850/format/webp"></p>
+<h3 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h3><ul>
+<li>下载的视频保存路径设定</li>
+<li>指令查询<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">ffmpeg -i <span class="string">&quot;https://test.test/test.m3u8&quot;</span> -vcodec <span class="keyword">copy</span> -acodec <span class="keyword">copy</span> -absf aac_adtstoasc <span class="keyword">test</span>.mp4</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<p><strong>参考网站：</strong></p>
+<ol>
+<li>mac或linux环境下用python爬取m3u8格式视频并将其ts文件合成转存为mp4文件：<br><a href="https://blog.csdn.net/Jo_Andy/article/details/89714777">https://blog.csdn.net/Jo_Andy/article/details/89714777</a></li>
+<li>经验分享：使用谷歌浏览器下载想要的任意网页视频&#x2F;音乐的方法：<br><a href="https://blog.csdn.net/CC1991_/article/details/89761779?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2">https://blog.csdn.net/CC1991_/article/details/89761779?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2</a></li>
+<li>[实用技能] 下载“一直播”回放视频（通过FFmpeg下载网页中m3u8流媒体视频，在线视频解析下载）：<br><a href="https://blog.csdn.net/petrel2015/article/details/96469169">https://blog.csdn.net/petrel2015/article/details/96469169</a></li>
+<li>下载“一直播”回放视频到我的Mac（通过FFmpeg下载网页中m3u8流媒体视频）：<br><a href="https://blog.csdn.net/Jessica__Chan/article/details/104245423">https://blog.csdn.net/Jessica__Chan/article/details/104245423</a></li>
+<li>ffmpeg官网：<a href="http://ffmpeg.org/ffmpeg.html">http://ffmpeg.org/ffmpeg.html</a></li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> Tech </category>
-          
+        <category>Tech</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-            <tag> Selenium </tag>
-            
-            <tag> Webdriver </tag>
-            
-            <tag> Chromedriver </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac环境下安装Python3</title>
-      <link href="/burro-cmd.github.io/2019/08/23/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%B8%8A%E5%AE%89%E8%A3%85Python3/"/>
-      <url>/burro-cmd.github.io/2019/08/23/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%B8%8A%E5%AE%89%E8%A3%85Python3/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>  <strong>欢迎参与讨论，转载请注明出处。</strong></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  MacOS Mojave:10.14.5</p><h2 id="检查Mac自带Python版本"><a href="#检查Mac自带Python版本" class="headerlink" title="检查Mac自带Python版本"></a>检查Mac自带Python版本</h2><ul><li>在Launchpad找到终端，输入Python；</li><li>终端显示Python2.7.10，按住Control+D来退出Python运行环境。</li></ul><h2 id="安装X-code"><a href="#安装X-code" class="headerlink" title="安装X-code"></a>安装X-code</h2><ul><li>在终端输入X-code-select –install, 按Enter；</li><li>安装完成，在终端输入X-code-select -p来检查Xcode的安装位置，按住Control+D结束命令。<br>  <strong>如果已经安装了Xcode，请不要再安装 OSX-GCC-Installer。两者结合可能会引发难以诊断的问题。</strong></li></ul><h2 id="安装Brew"><a href="#安装Brew" class="headerlink" title="安装Brew"></a>安装Brew</h2><ul><li>打开Brew官网：<a href="https://brew.sh/">https://brew.sh</a>, <code>在brew官网复制/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</code>，粘贴到Mac终端，按Enter，安装完成之后显示Installation successful</li><li>安装完成Homebrew后，需将其所在路径插入到 PATH 环境变量的最前面，即在您所登录用户的 ~&#x2F;.profile 文件末尾加上这一行：  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> <span class="attribute">PATH</span>=<span class="string">&quot;/usr/local/opt/python/libexec/bin:<span class="variable">$PATH</span>&quot;</span></span><br></pre></td></tr></table></figure></li></ul><h2 id="安装Python3"><a href="#安装Python3" class="headerlink" title="安装Python3"></a>安装Python3</h2><ul><li>在终端输入brew install python3，等待安装完成。</li><li>在终端输入Python3，会显示出Python3的版本。</li></ul><hr><p>  <strong>参考网站：</strong></p><ol><li>在Mac OS X上安装Python 3, <a href="https://pythonguidecn.readthedocs.io/zh/latest/starting/install3/osx.html#install3-osx">https://pythonguidecn.readthedocs.io/zh/latest/starting/install3/osx.html#install3-osx</a></li><li>Python最佳实践指南！, <a href="https://pythonguidecn.readthedocs.io/zh/latest/index.html">https://pythonguidecn.readthedocs.io/zh/latest/index.html</a></li></ol>]]></content>
-      
-      
+      <tags>
+        <tag>ffmpeg</tag>
+        <tag>homebrew</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac环境下利用Python + Selenium实现自动登录签到（1）</title>
+    <url>/burro-cmd.github.io/2020/03/17/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%88%A9%E7%94%A8Python%20+%20Selenium%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%E7%AD%BE%E5%88%B0%EF%BC%881%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>前言</li>
+<li>环境搭建</li>
+<li>Selenium模块下载</li>
+<li>webdriver下载</li>
+<li>实例测试</li>
+<li>踩坑</li>
+<li>继续学习</li>
+</ul>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>   目前在找资料时，由于论坛对新人有些限制，不能访问某些主题，故有了此教程，以此来实现每天自动登录签到来增长积分和威望。</p>
+<h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>   Python + Selenium + Webdriver实现自动登录并签到（后续更新Mac下定时任务）</p>
+<h4 id="Selenium模块下载"><a href="#Selenium模块下载" class="headerlink" title="Selenium模块下载"></a>Selenium模块下载</h4><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">pip install Selenium</span><br><span class="line">pip install -i https:<span class="regexp">//</span>pypi.doubanio.com<span class="regexp">/simple/</span> selenium <span class="comment">#备用地址</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Webdriver下载"><a href="#Webdriver下载" class="headerlink" title="Webdriver下载"></a>Webdriver下载</h4><ul>
+<li>Chrome驱动地址：<a href="https://npm.taobao.org/mirrors/chromedriver%EF%BC%8C">https://npm.taobao.org/mirrors/chromedriver，</a><br>或<a href="http://chromedriver.storage.googleapis.com/index.html">http://chromedriver.storage.googleapis.com/index.html</a></li>
+<li>Firefox驱动地址：<a href="https://github.com/mozilla/geckodriver/releases">https://github.com/mozilla/geckodriver/releases</a></li>
+<li>IE驱动地址：<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/</a></li>
+<li>Safari驱动地址：<a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">https://webkit.org/blog/6900/webdriver-support-in-safari-10/</a></li>
+</ul>
+<h5 id="查看Chrome版本"><a href="#查看Chrome版本" class="headerlink" title="查看Chrome版本"></a>查看Chrome版本</h5><ol>
+<li>打开Chrome浏览器输入：Chrome:&#x2F;&#x2F;settings&#x2F;help查看当前Chrome版本。<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165648225-1548130970.png"></li>
+<li>下载对应的Chromedriver版本</li>
+</ol>
+<ul>
+<li>下载地址，见上面的Chrome驱动下载地址。<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165254531-1908392009.png"></li>
+<li>选择Mac系统的Chromedriver<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165332216-144100406.png"></li>
+<li>直接解压该文件<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165613118-589868811.png"></li>
+</ul>
+<ol start="3">
+<li>把Chromedriver放在usr&#x2F;local&#x2F;bin目录下</li>
+</ol>
+<ul>
+<li>这个目录是隐藏的，所以随便打开一个Finder，然后Command+Shift+G<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122165943949-1335683902.png"></li>
+<li>直接把Chromedriver放进来<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122170048462-614100250.png"></li>
+</ul>
+<ol start="4">
+<li>代码测试   <figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># Author:Burro-CMD</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium import WebDriver</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome()</span><br><span class="line">driver.<span class="built_in">get</span>(<span class="string">&quot;http://www.baidu.com&quot;</span>)</span><br></pre></td></tr></table></figure>
+   如下图所示，出现‘Chrome正受到自动测试软件的控制’，就说明已经安装成功了。<br>   <img src="https://img2018.cnblogs.com/i-beta/1630306/201911/1630306-20191122170340498-1705999559.png"></li>
+</ol>
+<h3 id="实例测试"><a href="#实例测试" class="headerlink" title="实例测试"></a>实例测试</h3><p>   利用Python + Selenium + Webdriver实现自动登录掌上百科并签到。<br>   代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">denglu_luntan</span>(<span class="params">driver, user, pwd</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;登录论坛</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    利用 WebDriver 找到登陆窗口模拟登陆操作</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">        driver：初始化的 webdriver</span></span><br><span class="line"><span class="string">        user：用户名</span></span><br><span class="line"><span class="string">        pwd：登陆密码</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns：</span></span><br><span class="line"><span class="string">        无，仅单独抽取执行登陆操作</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    user_box = driver.find_element_by_name(<span class="string">&#x27;username&#x27;</span>)</span><br><span class="line">    user_box.send_keys(user)</span><br><span class="line">    passwd_box = driver.find_element_by_name(<span class="string">&#x27;password&#x27;</span>)</span><br><span class="line">    passwd_box.send_keys(pwd)</span><br><span class="line">    <span class="comment"># time.sleep(2)</span></span><br><span class="line">    load_box = driver.find_element_by_css_selector(<span class="string">&#x27;.pn.vm&#x27;</span>)</span><br><span class="line">    load_box.click()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">do_sign</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;执行签到操作</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    利用 WebDriver 找到签到的表情和输入框，并执行签到操作</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">        无</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns：</span></span><br><span class="line"><span class="string">        无，执行签到操作后正常退出</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    driver = webdriver.Chrome()</span><br><span class="line">    driver.set_window_position(<span class="number">20</span>,<span class="number">40</span>) <span class="comment">#设置窗口的位置</span></span><br><span class="line">    driver.set_window_size(<span class="number">1000</span>,<span class="number">600</span>) <span class="comment">#设置窗口的尺寸</span></span><br><span class="line"></span><br><span class="line">    driver.get(<span class="string">&#x27;https://www.pdawiki.com/forum/forum.php&#x27;</span>)</span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    denglu_luntan(driver, <span class="string">&#x27;你的用户名&#x27;</span>, <span class="string">&#x27;你的密码&#x27;</span>)</span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 跳转到每日签到</span></span><br><span class="line">    qiandao_png = driver.find_element_by_id(<span class="string">&#x27;mn_N462e&#x27;</span>)</span><br><span class="line">    qiandao_png.click()</span><br><span class="line">    <span class="comment"># 选择心情图片</span></span><br><span class="line">    xin_qing = driver.find_element_by_id(<span class="string">&#x27;kx&#x27;</span>)</span><br><span class="line">    xin_qing.click()</span><br><span class="line">    <span class="comment"># 选择想说模式</span></span><br><span class="line">    duanyu_input = driver.find_element_by_id(<span class="string">&#x27;todaysay&#x27;</span>)</span><br><span class="line">    <span class="comment"># 输入想说的内容</span></span><br><span class="line">    duanyu_input.send_keys(<span class="string">&#x27;撸起袖子加油干，未来是你们的&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 找到&quot;开始签到&quot;按钮</span></span><br><span class="line">    btn_png = driver.find_element_by_xpath(</span><br><span class="line">        <span class="string">&#x27;//*[@id=&quot;qiandao&quot;]/table/tbody/tr/td/div/a/img&#x27;</span>)</span><br><span class="line">    <span class="comment"># 寻找XPath时，先搜索定位到&quot;qiandao&quot;，再右击选择copy XPath</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 点击</span></span><br><span class="line">    btn_png.click()</span><br><span class="line">    <span class="comment"># 等待</span></span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 关闭浏览器</span></span><br><span class="line">    driver.quit()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br></pre></td></tr></table></figure>
+
+<h3 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h3><ol>
+<li>定位元素的确定<br>   本例中使用到的定位有：</li>
+</ol>
+<ul>
+<li>id定位：<br>   find_element_by_id(“id值”)；id属性是唯一的<br><figure class="highlight ceylon"><table><tr><td class="code"><pre><span class="line">driver.find<span class="number">_</span>element<span class="number">_</span><span class="meta">by</span><span class="number">_</span>id(<span class="string">&#x27;mn_N462e&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
+<li>name定位<br>   元素的名称，find_element_by_name(“name值”)；name属性值在当前页面可以不唯一   <figure class="highlight ceylon"><table><tr><td class="code"><pre><span class="line">driver.find<span class="number">_</span>element<span class="number">_</span><span class="meta">by</span><span class="number">_n</span>ame(<span class="string">&#x27;username&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
+<li>XPath定位<br>   利用元素属性定位：   <figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">　　find_element_by_xpath(<span class="string">&quot;.//*[@id=&#x27;Title&#x27;]&quot;</span>)，这里是用的<span class="built_in">id</span>，也可以用元素其他能够唯一标识的属性，不局限于<span class="built_in">id</span>、<span class="built_in">name</span>、<span class="built_in">class</span>这些；*代表的是标签名，不指定时就可以用*代替</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h3><ul>
+<li>定位元素的其他方式</li>
+<li>Mac下定时任务</li>
+</ul>
+<hr>
+<p><strong>参考网站：</strong></p>
+<ol>
+<li>利用Python + Selenium实现自动登录签到：<br><a href="https://cloud.tencent.com/developer/article/1592562">https://cloud.tencent.com/developer/article/1592562</a></li>
+<li>手把手教你搭建 Selenuim 自动化环境：<br><a href="https://mp.weixin.qq.com/s?__biz=MzI5Nzk2ODc0Ng==&mid=2247483847&idx=1&sn=4c034608dd1f3b4555253d36b5daa371&chksm=ecadb4c2dbda3dd431539f4e63ec731080d3ca6c9393c8277ecabed3d5d48c238362673cc2e4&scene=21#wechat_redirect">https://mp.weixin.qq.com/s?__biz=MzI5Nzk2ODc0Ng==&amp;mid=2247483847&amp;idx=1&amp;sn=4c034608dd1f3b4555253d36b5daa371&amp;chksm=ecadb4c2dbda3dd431539f4e63ec731080d3ca6c9393c8277ecabed3d5d48c238362673cc2e4&amp;scene=21#wechat_redirect</a></li>
+<li>WebDriver–定位元素的8中方式：<a href="https://www.cnblogs.com/i969639/p/11201174.html">https://www.cnblogs.com/i969639/p/11201174.html</a></li>
+<li>Mac安装Chromedriver： <a href="https://www.cnblogs.com/lilyo/p/11959494.html">https://www.cnblogs.com/lilyo/p/11959494.html</a></li>
+<li>Selenium webdriver的环境配置：<a href="https://www.cnblogs.com/qq834761298/p/12169476.html">https://www.cnblogs.com/qq834761298/p/12169476.html</a></li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> Tech </category>
-          
+        <category>Tech</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-            <tag> X-code </tag>
-            
-            <tag> Brew </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>申请美国EVUS（签证更新电子系统）</title>
-      <link href="/burro-cmd.github.io/2019/08/23/%E7%BE%8E%E5%9B%BDEVUS/"/>
-      <url>/burro-cmd.github.io/2019/08/23/%E7%BE%8E%E5%9B%BDEVUS/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  <strong>Q&amp;A</strong><br>  Q: 什么是签证更新电子系统?<br>  A: 签证更新电子系统，或EVUS，是一个电子平台，用于确定持有十年B1, B2或B1&#x2F;B2访客签证的旅客因临时商务或旅游前来美国旅行的资格。符合这一描述的旅客必须在前往美国之前进行EVUS登记。  </p><p>  Q: 如果我已经得到了签证，为什么还需要进行EVUS登记？<br>  A: 如果您持有B1，B2或B1&#x2F;B2的访客签证前往美国进行短期商务和旅游，根据美国移民法的规定，<strong>您必须完成EVUS登记</strong>。  </p><p>  Q: EVUS和签证之间的区别是什么？<br>  A: EVUS登记不是签证。它不符合律或法规的要求以替代美国签证，当根据美国法律要求签证时。计划前往美国访问的旅客出行必须持有有效的B1，B2或B1 &#x2F; B2级访客签证。身为中华人民共和国公民&#x2F;国民的旅客仅持有有效的十年B1，B2或B1 &#x2F; B2级签证，必须在EVUS上申请登记，并且在行前持有签证。如果您已在EVUS登记并抵达机场，该旅客将可以前往美国。其他任何非B1，B2或B1 &#x2F; B2具有十年有效期类型的签证，不需要申请EVUS登记。  </p><p>  Q: 如何重新注册您的签证更新电子系统?<br>  A: 成功的EVUS注册通常有效期为两年（自注册之日起），或护照到期的前六个月，或签证到期（以较早者为准）。<br>  如果您的EVUS即将到期或者已经到期的原因是由于护照有效期的问题而引起的，那么请联系您的护照签发机构或离您最近的中国大使馆，并按照他们的指示更新您的护照。然后用您的新护照信息重新注册EVUS。如果您的EVUS即将到期或者已经到期的原因是由于EVUS两年有效期而引起的，请登陆我们的官方网站<a href="https://www.evus.gov/">https://www.evus.gov</a>. 重新注册一份 新的EVUS.  </p><h2 id="申请流程"><a href="#申请流程" class="headerlink" title="申请流程"></a>申请流程</h2><h3 id="Step1"><a href="#Step1" class="headerlink" title="Step1"></a>Step1</h3><p>点击右上角“中国”，选择中文系统。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=99a986a9c0ea15ce41eee00186013a25/1cc87fd6912397dd3bd670285082b2b7d1a28765.jpg"></p><h3 id="Step2"><a href="#Step2" class="headerlink" title="Step2"></a>Step2</h3><p>点击“新登记申请”<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=c02714f61cce36d3a20483380af23a24/7527e22297dda14436a6849ebbb7d0a20df48665.jpg"></p><h3 id="Step3"><a href="#Step3" class="headerlink" title="Step3"></a>Step3</h3><p>选择“个人登记”，如有同行的人，可选择“团体登记”。请确保已拥有登记所需的前提材料<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=5578c8d23fd3d539c13d0fcb0a86e927/e8d3e4dca144ad34c5106fabd9a20cf430ad8565.jpg"></p><h3 id="Step4"><a href="#Step4" class="headerlink" title="Step4"></a>Step4</h3><p>点击同意免责声明，点击“下一步”。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=885cebcfdc39b6004dce0fbfd9513526/ee2dd245ad3459822f250dbe05f431adcaef8465.jpg"></p><h3 id="Step5"><a href="#Step5" class="headerlink" title="Step5"></a>Step5</h3><p>填写旅行文件信息，点击“下一步”<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=a8410825bf003af34dbadc68052bc619/d8b4de355982b2b74e30d1e838adcbef77099b65.jpg"></p><h3 id="Step6"><a href="#Step6" class="headerlink" title="Step6"></a>Step6</h3><p>填写登记者相关信息。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=1692e7ef3387e9504217f3642039531b/2072c1b6d0a20cf4913f16f37f094b36adaf9965.jpg"></p><h3 id="Step7"><a href="#Step7" class="headerlink" title="Step7"></a>Step7</h3><p>填写旅行信息，如果在美国没有联系人，可以写unknown。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">Noted:</span> 因为是商务，所以这边我是写了美国的联系人的，个人觉得这很大程度上能够快速通过的原因之一。</span><br></pre></td></tr></table></figure><p><img src="https://imgsa.baidu.com/forum/w%3D580/sign=9b61e79be050352ab16125006342fb1a/cb47a3a30cf431ad6a7dab154236acaf2fdd9865.jpg"></p><h3 id="Step8"><a href="#Step8" class="headerlink" title="Step8"></a>Step8</h3><p>资格问题，如实填写<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=9815344c3c2ac65c6705667bcbf3b21d/a9527ff531adcbefd49b962aa5af2edda2cc9f65.jpg"></p><h3 id="Step9"><a href="#Step9" class="headerlink" title="Step9"></a>Step9</h3><p>检查登记，全面检查一下信息是否正确。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=4ac2e836cf5c1038247ececa8210931c/750442accbef7609e8a471b327dda3cc7dd99e65.jpg"></p><h3 id="Step10"><a href="#Step10" class="headerlink" title="Step10"></a>Step10</h3><p>提交登记申请。如果没有问题，就可以点击“提交”申请。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=91b81b40193853438ccf8729a312b01f/485db8ee76094b36083df3c1aacc7cd98c109d65.jpg"></p><h3 id="Step11"><a href="#Step11" class="headerlink" title="Step11"></a>Step11</h3><p>等待处理<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=63cecd245a43fbf2c52ca62b807fca1e/b21f05084b36acaf8b4f7ed075d98d1000e99c65.jpg"></p><h3 id="Step12"><a href="#Step12" class="headerlink" title="Step12"></a>Step12</h3><p>查询EVUS申请状态。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=b6aa8e5ff2f2b211e42e8546fa816511/0ff93837acaf2edd055ea1c5841001e938019365.jpg"></p><h3 id="Step13"><a href="#Step13" class="headerlink" title="Step13"></a>Step13</h3><p>登记成功。我是过了5分钟就通过了，下面是申请通过的图片<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=f4d126eebb119313c743ffb855390c10/32c6dfae2edda3ccdb4b500c08e93901203f9265.jpg"></p><hr><p><strong>参考网站：</strong></p><ol><li>EVUS官网：<a href="https://www.evus.gov/">https://www.evus.gov</a></li><li>美国驻华大使馆和领事馆：<a href="https://china.usembassy-china.org.cn/zh/visas-zh/nonimmigrant-visas-zh/evus-zh/">https://china.usembassy-china.org.cn/zh/visas-zh/nonimmigrant-visas-zh/evus-zh/</a></li><li>贴吧：<a href="https://tieba.baidu.com/p/4879012773">https://tieba.baidu.com/p/4879012773</a></li></ol>]]></content>
-      
-      
+      <tags>
+        <tag>Python</tag>
+        <tag>Selenium</tag>
+        <tag>Webdriver</tag>
+        <tag>Chromedriver</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>压凹_Indent</title>
+    <url>/burro-cmd.github.io/2023/08/02/%E5%8E%8B%E5%87%B9_Indent/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>压凹：</strong>通过使用厚度和间隙值进来生成特征，压凹特征在目标实体上生成与所选工具实体的轮廓非常接近的等距袋套或突起特征。</p>
+<p><strong>要求：</strong></p>
+<ul>
+<li>目标实体和工具实体其中必须有一个为实体。</li>
+<li>如想压凹，目标实体必须与工具实体接触，或者间隙值必须允许穿越目标实体的突起。</li>
+<li>如想切除，目标实体和工具实体不必相互接触，但间隙值必须大到可足够生成与目标实体的交叉。</li>
+<li>如想以曲面工具实体压凹（切除）实体，曲面必须与实体完全相交。</li>
+</ul>
+<div align=center>
+<img src="图片1.png" width = 100%>
+</div>
+
+<p><left>版权声明：本文为博主原创文章，转载请注明出处。</left></p>
+]]></content>
       <categories>
-          
-          <category> 生活 </category>
-          
+        <category>Solidworks</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> EVUS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Atom使用</title>
-      <link href="/burro-cmd.github.io/2019/08/14/Atom%E4%BD%BF%E7%94%A8/"/>
-      <url>/burro-cmd.github.io/2019/08/14/Atom%E4%BD%BF%E7%94%A8/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="Packages"><a href="#Packages" class="headerlink" title="Packages"></a>Packages</h3><p><strong>1. Simplified-chinese-menu</strong><br>Atom 的简体中文汉化语言包,目前最全的汉化包。包含菜单汉化、右键菜单汉化以及设置汉化。</p><p><strong>2. Emmet</strong><br>前端开发都懂得的，html 代码补全，使用方法还有文档可以查阅 emmet使用文档。</p><p><strong>3. File-icons</strong><br>不同格式的文本显示 不同颜色和类型的图标，便于分辨。</p><p><strong>4. Color-picker</strong><br>顾名思义，颜色采集器，非常清晰好用。快捷键 ctrl+alt+option 启动使用。</p><p><strong>5. Atom-beautify</strong><br>美化格式插件，规范缩进，删除多余空行等等。快捷键 ctrl+option+b 启动使用。</p><p><strong>6. Markdown-scroll-sync</strong><br>atom 自带markdown 预览功能，快捷键 ctrl+shift+m 会打开两个面板的视图，但文档太长的时候，不会跟着同步滚动，这个插件就是做这个用的，滚动文档的时候预览内容同步滚动。</p><p><strong>7. Minimap</strong><br>编辑器右侧小面板，快捷展示当前编辑的内容在整个文档中的位置。同 sublime 极为相似。</p><p><strong>8. Docblocker</strong><br>便捷的添加注释代码，&#x2F;** 按 tab 键即添加注释代码快。</p><p><strong>9. Atom-terminal-panel</strong><br>快速调取使用终端面板，快捷键 ctrl+ `启动，底部工具条的 + 也可以点击展示终端面板。</p><p><strong>10. Activate-power-mode</strong><br>输入时有震撼效果，这个插件纯粹是用来炫技的，只适合拿来玩玩，长时间使用，我相信你的视力一定会下降的，不要怪我没提醒你哦。</p><p><strong>11. Gist-it</strong><br>快速分享代码到gist.github.com</p><p><strong>12. Sync-settings</strong><br>插件备份、按键绑定备份</p><p><strong>13. Browser-plus</strong><br>编辑器内置浏览器</p><p><strong>14. Linter</strong><br>代码校验工具</p><p><strong>15. Autocomplete-paths</strong><br>填写路径的时候有提示</p><h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td>Shft+cmd+p</td><td>命令版(可以看到所有快捷键)</td></tr><tr><td>alt + shift + s</td><td>查看文件相关语言的代码块(snippet)</td></tr><tr><td>cmd + f</td><td>搜索当前文件</td></tr><tr><td>cmd+shift+f</td><td>搜索整个项目</td></tr><tr><td>alt + cmd + [</td><td>代码折叠, 我不喜欢用</td></tr><tr><td>alt + cmd + ]</td><td>代码展开</td></tr><tr><td>cmd + &#x2F;</td><td>快速注释当前行</td></tr><tr><td>cmd + [</td><td>代码左缩进</td></tr><tr><td>cmd + ]</td><td>代码右缩进</td></tr><tr><td>cmd + b</td><td>快速跳转打开的文件</td></tr><tr><td>alt+B或alt+left</td><td>光标按单词左移</td></tr><tr><td>alt+F或alt+right</td><td>光标按单词右移</td></tr><tr><td>cmd+right或ctrl+e</td><td>光标移动到行最右最后一个非空字符</td></tr><tr><td>cmd+left或ctrl+a</td><td>光标移动到行最左第一个非空字符</td></tr><tr><td>cmd + up</td><td>光标移动到文件头</td></tr><tr><td>cmd + down</td><td>贯标移动到文件尾</td></tr><tr><td>ctrl + g</td><td>行跳转, 语法为行号:列号</td></tr><tr><td>cmd + r</td><td>按当前文件方法跳转</td></tr><tr><td>cmd + t</td><td>全项目模糊查找关键字并跳转</td></tr><tr><td>ctrl + m</td><td>按照括号匹配跳转</td></tr><tr><td>cmd + F2或cmd+fn+f2</td><td>给某一行设置书签显示在行号右侧</td></tr></tbody></table>]]></content>
-      
-      
+      <tags>
+        <tag>特征</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/burro-cmd.github.io/2023/02/10/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Mac环境下安装Python3</title>
+    <url>/burro-cmd.github.io/2019/08/23/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%B8%8A%E5%AE%89%E8%A3%85Python3/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>  <strong>欢迎参与讨论，转载请注明出处。</strong></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  MacOS Mojave:10.14.5</p>
+<h2 id="检查Mac自带Python版本"><a href="#检查Mac自带Python版本" class="headerlink" title="检查Mac自带Python版本"></a>检查Mac自带Python版本</h2><ul>
+<li>在Launchpad找到终端，输入Python；</li>
+<li>终端显示Python2.7.10，按住Control+D来退出Python运行环境。</li>
+</ul>
+<h2 id="安装X-code"><a href="#安装X-code" class="headerlink" title="安装X-code"></a>安装X-code</h2><ul>
+<li>在终端输入X-code-select –install, 按Enter；</li>
+<li>安装完成，在终端输入X-code-select -p来检查Xcode的安装位置，按住Control+D结束命令。<br>  <strong>如果已经安装了Xcode，请不要再安装 OSX-GCC-Installer。两者结合可能会引发难以诊断的问题。</strong></li>
+</ul>
+<h2 id="安装Brew"><a href="#安装Brew" class="headerlink" title="安装Brew"></a>安装Brew</h2><ul>
+<li>打开Brew官网：<a href="https://brew.sh/">https://brew.sh</a>, <code>在brew官网复制/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</code>，粘贴到Mac终端，按Enter，安装完成之后显示Installation successful</li>
+<li>安装完成Homebrew后，需将其所在路径插入到 PATH 环境变量的最前面，即在您所登录用户的 ~&#x2F;.profile 文件末尾加上这一行：  <figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> <span class="attribute">PATH</span>=<span class="string">&quot;/usr/local/opt/python/libexec/bin:<span class="variable">$PATH</span>&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="安装Python3"><a href="#安装Python3" class="headerlink" title="安装Python3"></a>安装Python3</h2><ul>
+<li>在终端输入brew install python3，等待安装完成。</li>
+<li>在终端输入Python3，会显示出Python3的版本。</li>
+</ul>
+<hr>
+<p>  <strong>参考网站：</strong></p>
+<ol>
+<li>在Mac OS X上安装Python 3, <a href="https://pythonguidecn.readthedocs.io/zh/latest/starting/install3/osx.html#install3-osx">https://pythonguidecn.readthedocs.io/zh/latest/starting/install3/osx.html#install3-osx</a></li>
+<li>Python最佳实践指南！, <a href="https://pythonguidecn.readthedocs.io/zh/latest/index.html">https://pythonguidecn.readthedocs.io/zh/latest/index.html</a></li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> Tech </category>
-          
+        <category>Tech</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Atom </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Atom中Markdown语法</title>
-      <link href="/burro-cmd.github.io/2019/08/14/Atom%E4%B8%ADMarkdown%E8%AF%AD%E6%B3%95/"/>
-      <url>/burro-cmd.github.io/2019/08/14/Atom%E4%B8%ADMarkdown%E8%AF%AD%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一级标题       语法：#+空格</span><br><span class="line">二级标题       语法：##+空格</span><br><span class="line">三级标题       语法：###+空格</span><br></pre></td></tr></table></figure><p>效果：</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">无序列表        语法：-+空格</span><br></pre></td></tr></table></figure><p>效果：</p><ul><li>无序1</li><li>无序2</li><li>无序3</li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">有序列表        语法：1.+空格</span><br></pre></td></tr></table></figure><p>效果：</p><ol><li>有序1</li><li>有序2</li><li>有序3</li></ol><h4 id="引用或强调"><a href="#引用或强调" class="headerlink" title="引用或强调"></a>引用或强调</h4><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">引用或强调      语法:</span> ```内容```和&gt; +空格</span><br></pre></td></tr></table></figure><p>效果：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">静夜思</span><br><span class="line">窗前看月光</span><br><span class="line">抬头望山月</span><br></pre></td></tr></table></figure><blockquote><p>静夜思<br>窗前看月光<br>抬头望山月</p></blockquote><h4 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h4><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">加粗           语法: <span class="strong">**内容**</span>或者<span class="emphasis">__内容__</span></span><br></pre></td></tr></table></figure><p>效果：我是需要<strong>加粗的内容</strong></p><h4 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h4><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">斜体          语法: <span class="strong">*内容*</span>或者<span class="emphasis">__内容__</span></span><br></pre></td></tr></table></figure><p>效果：我是需要<em>斜体的内容</em></p><h4 id="斜粗体"><a href="#斜粗体" class="headerlink" title="斜粗体"></a>斜粗体</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">斜粗体        语法：<span class="strong">**<span class="emphasis">*内容*</span>**</span>或者<span class="strong">__<span class="emphasis">_内容_</span>__</span></span><br></pre></td></tr></table></figure><p>我是需要___粗斜体的内容___</p><h4 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">删除线        语法：~~删除线~~</span><br></pre></td></tr></table></figure><p>效果：<del>删除线</del></p><h4 id="粗斜体删除"><a href="#粗斜体删除" class="headerlink" title="粗斜体删除"></a>粗斜体删除</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">粗斜体删除     语法：<span class="strong">**<span class="emphasis">*~~粗斜体删除~~*</span>**</span>或者~~<span class="strong">**<span class="emphasis">*粗斜体删除*</span>**</span>~~</span><br></pre></td></tr></table></figure><p>我是需要***<del>粗斜体删除的内容</del>***</p><h4 id="插入分割线"><a href="#插入分割线" class="headerlink" title="插入分割线"></a>插入分割线</h4><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">插入分割线     语法：---或者<span class="emphasis">____</span>或者<span class="strong">***</span></span><br></pre></td></tr></table></figure><h2 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h2><hr><hr><h4 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">下划线        语法：<span class="tag">&lt;<span class="name">u</span>&gt;</span>这是需要下划线的内容<span class="tag">&lt;/<span class="name">u</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果：<u>这是需要下划线的内容</u></p><h4 id="文本居中"><a href="#文本居中" class="headerlink" title="文本居中"></a>文本居中</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">文本居中      语法：<span class="tag">&lt;<span class="name">center</span>&gt;</span>这是要居中的文本内容<span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果：<center>这是要居中的文本内容</center></p><h4 id="Todo列表"><a href="#Todo列表" class="headerlink" title="Todo列表"></a>Todo列表</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Todo列表     语法：</span><br><span class="line">                * <span class="selector-attr">[x]</span> Java</span><br><span class="line">                * <span class="selector-attr">[ ]</span> C</span><br><span class="line">                * <span class="selector-attr">[ ]</span> C++</span><br></pre></td></tr></table></figure><p>效果：</p><ul><li><input checked="" disabled="" type="checkbox"> Java</li><li><input disabled="" type="checkbox"> C</li><li><input disabled="" type="checkbox"> C++</li></ul><h4 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">换行         语法：</span><br><span class="line">                方法1.连续两个空格+回车</span><br><span class="line">                方法2.使用html语言换行标签<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果：<br>这是第一行，<br>这是第二行。<br>这是第一行，<br>这是第二行。</p><h4 id="添加注脚"><a href="#添加注脚" class="headerlink" title="添加注脚"></a>添加注脚</h4><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">添加注脚     语法：<span class="keyword">this</span> <span class="keyword">is</span> a basic footnot [^<span class="number">1</span>]</span><br><span class="line">说明：需要在站点根目录下安装插件：</span><br><span class="line">命令：npm install hexo-<span class="built_in">ref</span>erence --save</span><br></pre></td></tr></table></figure><p>效果：       this is a basic footnot <sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这是脚注">[1]</span></a></sup></p><h4 id="缩进字符"><a href="#缩进字符" class="headerlink" title="缩进字符"></a>缩进字符</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">缩进字符     语法：</span><br><span class="line">               <span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span>不断行的空白格<span class="symbol">&amp;nbsp;</span>或<span class="symbol">&amp;#160;</span></span><br><span class="line">               <span class="symbol">&amp;ensp;</span><span class="symbol">&amp;ensp;</span>半角的空白<span class="symbol">&amp;ensp;</span>或<span class="symbol">&amp;#8194;</span></span><br><span class="line">               <span class="symbol">&amp;emsp;</span><span class="symbol">&amp;emsp;</span>全角的空白<span class="symbol">&amp;emsp;</span>或<span class="symbol">&amp;#8195;</span></span><br></pre></td></tr></table></figure><p>效果：<br>&nbsp;&nbsp;不断行的空白格&nbsp;或&#160;<br>&ensp;&ensp;半角的空白&ensp;或&#8194;<br>&emsp;&emsp;全角的空白&emsp;或&#8195;</p><h4 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h4><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">特殊符号     语法：<span class="punctuation">\</span><span class="punctuation">\</span>    反斜线</span><br><span class="line">                 <span class="punctuation">\</span>`    反引号</span><br><span class="line">                 \*    星号</span><br><span class="line">                 \_    底线</span><br><span class="line">                 \&#123;\&#125;    花括号</span><br><span class="line">                 \[\]    方括号</span><br><span class="line">                 \(\)    括弧</span><br><span class="line">                 \#    井号</span><br><span class="line">                 \+    加号</span><br><span class="line">                 \-    减号</span><br><span class="line">                 \.    英文句点</span><br><span class="line">                 \!    惊叹号</span><br></pre></td></tr></table></figure><p>效果：<br>\    反斜线<br>`    反引号<br>*    星号<br>_    底线<br>{}    花括号<br>[]    方括号<br>()    括弧<br>#    井号<br>+    加号<br>-    减号<br>.    英文句点<br>!    惊叹号</p><h4 id="存放代码块"><a href="#存放代码块" class="headerlink" title="存放代码块"></a>存放代码块</h4><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">存放代码块    语法：<span class="string">``</span><span class="string">`代码`</span><span class="string">``</span></span><br></pre></td></tr></table></figure><p>效果：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">windows.<span class="property">onload</span>=<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;反斜杠```用来存放代码&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">表格      语法：</span><br><span class="line">          &lt;center&gt;行<span class="number">1</span> |&lt;center&gt;行<span class="number">2</span> |&lt;center&gt;行<span class="number">3</span></span><br><span class="line">            <span class="symbol">:----</span>:    |  <span class="symbol">:----</span>:   | <span class="symbol">:----</span>:</span><br><span class="line">            小程序     |   vue     | 菜鸟</span><br><span class="line">            search    |   工程师   | 码农</span><br><span class="line">&lt;center&gt;表示表头居中，<span class="symbol">:</span>在最左边表示左对齐，<span class="symbol">:</span>在最右边表示右对齐，左右两边都有<span class="symbol">:</span>表示居中。</span><br></pre></td></tr></table></figure><p>效果：</p><center>行1 |<center>行2 |<center>行3:----: | :----: | :----:小程序 | vue | 菜鸟search | web前段开发工程师 | 码农<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">行内形式     语法：<span class="selector-attr">[链接文字]</span>(链接网址“标题”)</span><br></pre></td></tr></table></figure><p>效果：</p><ol><li>Example: This is an <a href="http://example.com/" title="With a Title">example link</a>.</li><li>Example: This is an <a href="www.baidu.com">百度</a>.</li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">参考形式     语法：</span><br><span class="line">               <span class="selector-attr">[链接文字]</span><span class="selector-attr">[name]</span></span><br><span class="line"></span><br><span class="line">               <span class="selector-attr">[name]</span>: link <span class="string">&quot;Title&quot;</span></span><br></pre></td></tr></table></figure><p>语法示例：</p><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">我使用 [<span class="symbol">Google</span>][<span class="number">1</span>] 进行学术搜索多一些,使用 [百度][<span class="number">2</span>]进行日常搜索多一些，很少使用[<span class="symbol">Bing</span>][<span class="number">3</span>] .</span><br><span class="line">我不能一边使用 [百度搜索][<span class="number">2</span>] 一边骂他不如 [<span class="symbol">Google</span>][<span class="number">1</span>]，我们需要学会的是利用资源。</span><br><span class="line"></span><br><span class="line">[<span class="number">1</span>]: https://www.google.com/ <span class="string">&quot;Google&quot;</span></span><br><span class="line">[<span class="number">2</span>]: https://www.baidu.com/ <span class="string">&quot;Baidu Search&quot;</span></span><br><span class="line">[<span class="number">3</span>]: https://cn.bing.com/ <span class="string">&quot;Bing Search&quot;</span></span><br></pre></td></tr></table></figure><p>效果：<br>早饭后，我打开 <a href="https://dict.eudic.net/ting" title="每日英语听力 - 欧路词典">每日英语听力</a> 学习英语。遇到不懂的英语单词，我借助 <a href="https://dict.eudic.net/" title="《欧路词典》在线版">欧路在线词典</a><br>查看释义并加入生词本，方便使用 <a href="https://www.eudic.net/v4/en/app/eudic" title="《欧路词典》英语翻译软件官方主页">客户端</a> 随时记忆单词。</p><h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">插入互联网上图片         语法：</span><br><span class="line">                      我的笔记本上装了 openSUSE Leap:</span><br><span class="line">                      ![opensuse-laptop](https:<span class="regexp">//</span>www.opensuse.org<span class="regexp">/build/im</span>ages/opensuse-laptop.gif)</span><br><span class="line">说明：鼠标右键复制图片地址。</span><br></pre></td></tr></table></figure><p>效果：<br>我在我的笔记本上装了 openSUSE Leap:<br><img src="https://www.opensuse.org/build/images/opensuse-laptop.gif" alt="opensuse-laptop"></p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">行内形式：    语法：![alt <span class="built_in">text</span>](图片网址 <span class="string">&quot;Title&quot;</span>)</span><br><span class="line">说明：alt <span class="built_in">text</span> 是替换文本；alt 属性规定在图像无法显示时的替代文本。虽然 alt <span class="built_in">text</span> 可以不填，但推荐还是填上。</span><br><span class="line">Title 是可选项，可以不屑，鼠标悬停与图片上会出现的标题文字。</span><br></pre></td></tr></table></figure><p>效果：<br><img src="http://a4.att.hudong.com/53/00/19300001232398130994005711200.jpg" alt="百度" title="百度"></p><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这是脚注<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-      
-      
+      <tags>
+        <tag>Python</tag>
+        <tag>X-code</tag>
+        <tag>Brew</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>申请美国EVUS（签证更新电子系统）</title>
+    <url>/burro-cmd.github.io/2019/08/23/%E7%BE%8E%E5%9B%BDEVUS/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  <strong>Q&amp;A</strong><br>  Q: 什么是签证更新电子系统?<br>  A: 签证更新电子系统，或EVUS，是一个电子平台，用于确定持有十年B1, B2或B1&#x2F;B2访客签证的旅客因临时商务或旅游前来美国旅行的资格。符合这一描述的旅客必须在前往美国之前进行EVUS登记。  </p>
+<p>  Q: 如果我已经得到了签证，为什么还需要进行EVUS登记？<br>  A: 如果您持有B1，B2或B1&#x2F;B2的访客签证前往美国进行短期商务和旅游，根据美国移民法的规定，<strong>您必须完成EVUS登记</strong>。  </p>
+<p>  Q: EVUS和签证之间的区别是什么？<br>  A: EVUS登记不是签证。它不符合律或法规的要求以替代美国签证，当根据美国法律要求签证时。计划前往美国访问的旅客出行必须持有有效的B1，B2或B1 &#x2F; B2级访客签证。身为中华人民共和国公民&#x2F;国民的旅客仅持有有效的十年B1，B2或B1 &#x2F; B2级签证，必须在EVUS上申请登记，并且在行前持有签证。如果您已在EVUS登记并抵达机场，该旅客将可以前往美国。其他任何非B1，B2或B1 &#x2F; B2具有十年有效期类型的签证，不需要申请EVUS登记。  </p>
+<p>  Q: 如何重新注册您的签证更新电子系统?<br>  A: 成功的EVUS注册通常有效期为两年（自注册之日起），或护照到期的前六个月，或签证到期（以较早者为准）。<br>  如果您的EVUS即将到期或者已经到期的原因是由于护照有效期的问题而引起的，那么请联系您的护照签发机构或离您最近的中国大使馆，并按照他们的指示更新您的护照。然后用您的新护照信息重新注册EVUS。如果您的EVUS即将到期或者已经到期的原因是由于EVUS两年有效期而引起的，请登陆我们的官方网站<a href="https://www.evus.gov/">https://www.evus.gov</a>. 重新注册一份 新的EVUS.  </p>
+<h2 id="申请流程"><a href="#申请流程" class="headerlink" title="申请流程"></a>申请流程</h2><h3 id="Step1"><a href="#Step1" class="headerlink" title="Step1"></a>Step1</h3><p>点击右上角“中国”，选择中文系统。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=99a986a9c0ea15ce41eee00186013a25/1cc87fd6912397dd3bd670285082b2b7d1a28765.jpg"></p>
+<h3 id="Step2"><a href="#Step2" class="headerlink" title="Step2"></a>Step2</h3><p>点击“新登记申请”<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=c02714f61cce36d3a20483380af23a24/7527e22297dda14436a6849ebbb7d0a20df48665.jpg"></p>
+<h3 id="Step3"><a href="#Step3" class="headerlink" title="Step3"></a>Step3</h3><p>选择“个人登记”，如有同行的人，可选择“团体登记”。请确保已拥有登记所需的前提材料<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=5578c8d23fd3d539c13d0fcb0a86e927/e8d3e4dca144ad34c5106fabd9a20cf430ad8565.jpg"></p>
+<h3 id="Step4"><a href="#Step4" class="headerlink" title="Step4"></a>Step4</h3><p>点击同意免责声明，点击“下一步”。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=885cebcfdc39b6004dce0fbfd9513526/ee2dd245ad3459822f250dbe05f431adcaef8465.jpg"></p>
+<h3 id="Step5"><a href="#Step5" class="headerlink" title="Step5"></a>Step5</h3><p>填写旅行文件信息，点击“下一步”<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=a8410825bf003af34dbadc68052bc619/d8b4de355982b2b74e30d1e838adcbef77099b65.jpg"></p>
+<h3 id="Step6"><a href="#Step6" class="headerlink" title="Step6"></a>Step6</h3><p>填写登记者相关信息。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=1692e7ef3387e9504217f3642039531b/2072c1b6d0a20cf4913f16f37f094b36adaf9965.jpg"></p>
+<h3 id="Step7"><a href="#Step7" class="headerlink" title="Step7"></a>Step7</h3><p>填写旅行信息，如果在美国没有联系人，可以写unknown。</p>
+<figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">Noted:</span> 因为是商务，所以这边我是写了美国的联系人的，个人觉得这很大程度上能够快速通过的原因之一。</span><br></pre></td></tr></table></figure>
+<p><img src="https://imgsa.baidu.com/forum/w%3D580/sign=9b61e79be050352ab16125006342fb1a/cb47a3a30cf431ad6a7dab154236acaf2fdd9865.jpg"></p>
+<h3 id="Step8"><a href="#Step8" class="headerlink" title="Step8"></a>Step8</h3><p>资格问题，如实填写<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=9815344c3c2ac65c6705667bcbf3b21d/a9527ff531adcbefd49b962aa5af2edda2cc9f65.jpg"></p>
+<h3 id="Step9"><a href="#Step9" class="headerlink" title="Step9"></a>Step9</h3><p>检查登记，全面检查一下信息是否正确。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=4ac2e836cf5c1038247ececa8210931c/750442accbef7609e8a471b327dda3cc7dd99e65.jpg"></p>
+<h3 id="Step10"><a href="#Step10" class="headerlink" title="Step10"></a>Step10</h3><p>提交登记申请。如果没有问题，就可以点击“提交”申请。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=91b81b40193853438ccf8729a312b01f/485db8ee76094b36083df3c1aacc7cd98c109d65.jpg"></p>
+<h3 id="Step11"><a href="#Step11" class="headerlink" title="Step11"></a>Step11</h3><p>等待处理<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=63cecd245a43fbf2c52ca62b807fca1e/b21f05084b36acaf8b4f7ed075d98d1000e99c65.jpg"></p>
+<h3 id="Step12"><a href="#Step12" class="headerlink" title="Step12"></a>Step12</h3><p>查询EVUS申请状态。<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=b6aa8e5ff2f2b211e42e8546fa816511/0ff93837acaf2edd055ea1c5841001e938019365.jpg"></p>
+<h3 id="Step13"><a href="#Step13" class="headerlink" title="Step13"></a>Step13</h3><p>登记成功。我是过了5分钟就通过了，下面是申请通过的图片<br><img src="https://imgsa.baidu.com/forum/w%3D580/sign=f4d126eebb119313c743ffb855390c10/32c6dfae2edda3ccdb4b500c08e93901203f9265.jpg"></p>
+<hr>
+<p><strong>参考网站：</strong></p>
+<ol>
+<li>EVUS官网：<a href="https://www.evus.gov/">https://www.evus.gov</a></li>
+<li>美国驻华大使馆和领事馆：<a href="https://china.usembassy-china.org.cn/zh/visas-zh/nonimmigrant-visas-zh/evus-zh/">https://china.usembassy-china.org.cn/zh/visas-zh/nonimmigrant-visas-zh/evus-zh/</a></li>
+<li>贴吧：<a href="https://tieba.baidu.com/p/4879012773">https://tieba.baidu.com/p/4879012773</a></li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> Tech </category>
-          
+        <category>生活</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Atom </tag>
-            
-            <tag> Markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac环境下使用GitHub和Hexo搭建博客</title>
-      <link href="/burro-cmd.github.io/2019/08/13/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8GitHub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-      <url>/burro-cmd.github.io/2019/08/13/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8GitHub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>　　<strong>欢迎参与讨论，转载请注明出处。</strong></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　一直想用一种方式来记录生活以及职业中的感受，所以接触到在Hexo上创建博客，在Github上托管。<br>　　本次博客搭建平台为Mac OS Mojave, 10.14.5，目前发现跟系统的特性没多大关联。这也是借鉴前辈的经验来搭建的，以下操作有做修改，有问题的欢迎各位指出，感谢。</p><h2 id="部署GitHub"><a href="#部署GitHub" class="headerlink" title="部署GitHub"></a>部署GitHub</h2><h3 id="前言-1"><a href="#前言-1" class="headerlink" title="前言"></a>前言</h3><p>　　本次博客的发布网站是在GitHub的GitHub Pages仓库，通过把网站文件存放到这种仓库里，你便可以利用GitHub提供给你的外链访问它。<br>　　声明：以下部分内容转载自铁锚的<a href="https://blog.csdn.net/renfufei/article/details/37725057">创建GitHub技术博客全攻略</a>和Musoucrow的<a href="https://musoucrow.github.io/2017/02/26/build_bolg/">在Mac平台使用GitHub和Hexo搭建博客</a>。</p><h3 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h3><p>　　前往<a href="https://musoucrow.github.io/2017/02/26/build_bolg/">GitHub</a>，参考下图输入账号、邮箱、密码，然后点击注册按钮。<br><img src="https://img-blog.csdn.net/20140712125642518?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVuZnVmZWk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p><h3 id="初始设置"><a href="#初始设置" class="headerlink" title="初始设置"></a>初始设置</h3><p>　　注册完成后，选择Free免费账号完成设置。<br>　　<img src="https://img-blog.csdn.net/20140712125717088?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVuZnVmZWk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p><h3 id="验证邮箱"><a href="#验证邮箱" class="headerlink" title="验证邮箱"></a>验证邮箱</h3><p>　　请打开你的邮箱，查看发送给你的确认邮件。你需要验证邮箱后，后面生成的个人主页才会被接受和发布。</p><h3 id="创建页面仓库"><a href="#创建页面仓库" class="headerlink" title="创建页面仓库"></a>创建页面仓库</h3><p>　　前往<a href="https://github.com/new">创建仓库</a>，参考下图。<br>　　仓库的名字需要和你的账号对应， 如 tiemaocsdn.github.io。<br>　　输入基本信息，然后点击创建仓库。<br>　　<img src="https://img-blog.csdn.net/20140712125914603?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVuZnVmZWk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>　　当你创建完页面仓库后，此时你的个人页面<code>https://username.github.io/</code>，已经创建完成（username即你的GitHub用户名，下同），<br>虽然还是空无一物，不过你已可以进行下一步了。</p><h2 id="安装前置软件"><a href="#安装前置软件" class="headerlink" title="安装前置软件"></a>安装前置软件</h2><h3 id="前言-2"><a href="#前言-2" class="headerlink" title="前言"></a>前言</h3><p>　　在进行安装核心软件之前，你需要先准备好其所依赖的软件。包括<a href="https://git-scm.com/">Git</a>、<a href="https://www.npmjs.com/">NPM</a>和<a href="https://nodejs.org/en/">Node.js</a>。</p><h3 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a>安装Homebrew</h3><p>　　在Mac OS下，你可以选择通过<a href="https://brew.sh/">Homebrew</a>来进行许多服务类软件的安装（这样会方便很多），在其他系统下也有类似的替代方案。<br>　　打开终端, 输入以下脚本。</p><pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL &lt;https://raw.githubusercontent.com/Homebrew/install/master/install&gt;)&quot;  </code></pre><p>　　等待安装完成后，在终端输入brew进行调试，如无报错则可继续。<br>　　<img src="https://musoucrow.github.io/images/build_bolg/brew.png">  </p><h3 id="通过Homebrew安装其余软件"><a href="#通过Homebrew安装其余软件" class="headerlink" title="通过Homebrew安装其余软件"></a>通过Homebrew安装其余软件</h3><p>　　如果你不用Homebrew，那么请通过其他方式进行下载并安装（例如官网）。以下演示使用Homebrew安装他们，一样是通过终端输入，需要按照顺序。</p><blockquote><p>brew install git<br>  brew install node<br>  brew install npm</p></blockquote><p>与Homebrew一样，安装完成后，你可以尝试依次在终端输入git、node、npm进行调试，如无报错则可继续。</p><h3 id="后记-1"><a href="#后记-1" class="headerlink" title="后记"></a>后记</h3><p>　　如果你觉得Homebrew的速度很慢，那么你可以考虑选择<strong>更换镜像</strong>。请通过搜索引擎寻找相关资料。</p><h2 id="安装Hexo及主题"><a href="#安装Hexo及主题" class="headerlink" title="安装Hexo及主题"></a>安装Hexo及主题</h2><h3 id="前言-3"><a href="#前言-3" class="headerlink" title="前言"></a>前言</h3><p>　　本次博客的框架源自Hexo，我们通过使用它来搭建出博客。Hexo基于Node.js，所以我们可以使用NPM来安装它，这在其他系统下也是一样的。</p><h3 id="使用NPM安装"><a href="#使用NPM安装" class="headerlink" title="使用NPM安装"></a>使用NPM安装</h3><p>　　与之前一样，在终端输入以下内容（选择其中之一），你的网络如果不是很好的话，可以选择方案二（通过淘宝镜像进行下载）。</p><blockquote><p>npm install -g hexo-cli<br>  npm install -g hexo-cli –registry&#x3D;<code>https://registry.npm.taobao.org</code></p></blockquote><h3 id="新建博客工程"><a href="#新建博客工程" class="headerlink" title="新建博客工程"></a>新建博客工程</h3><p>　　接下来你需要在终端切换到你觉得合适的目录下通过Hexo新建你的博客工程（也可以不管，只要你知道当前终端目录的所在）。例如（目录可通过拖动文件夹到终端指定）：</p><blockquote><p>cd &#x2F;Users&#x2F;Username&#x2F;Documents&#x2F;Bolg<br>  hexo init  </p></blockquote><p>经过一段时间后便会在Bolg文件夹下新建一堆文件，如下图这般，如无报错则可继续。<br>　　<img src="https://musoucrow.github.io/images/build_bolg/path.png"></p><h3 id="关于博客主题"><a href="#关于博客主题" class="headerlink" title="关于博客主题"></a>关于博客主题</h3><p>　　在你新建博客工程后仍需要选择一个主题(theme)应用到博客里，主题文件位于博客工程下的<strong>themes</strong>目录，默认便存在一款名为landscape的主题。你可以选择从Hexo官网的**<a href="https://hexo.io/themes/">主题专栏</a><strong>下载其他主题。<br>　　以下便以本博客所使用的</strong><a href="https://github.com/iissnan/hexo-theme-next/">NexT</a><strong>为范例进行演示。接下来的内容将会</strong><a href="http://theme-next.iissnan.com/getting-started.html">参考这里</a>**。</p><h3 id="安装NexT主题"><a href="#安装NexT主题" class="headerlink" title="安装NexT主题"></a>安装NexT主题</h3><p>　　前往**<a href="https://github.com/iissnan/hexo-theme-next/releases">发布页面</a>**选择你想要的版本（下图0.5.0版仅为示范），下载解压后获得Next主题，然后将其以文件夹的形式放到themes目录下。<br><img src="https://musoucrow.github.io/images/build_bolg/download.png"></p><p>　　贴士：你可以考虑像我这样把解压后的文件夹名称更改为next，这样会更清晰。<br><img src="https://musoucrow.github.io/images/build_bolg/themes.png"></p><h3 id="后记-2"><a href="#后记-2" class="headerlink" title="后记"></a>后记</h3><p>　　关于主题的选择其实远不止官网所刊，关于这些方面的你可以多去寻觅甚至自己动手丰衣足食！</p><h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><h3 id="前言-4"><a href="#前言-4" class="headerlink" title="前言"></a>前言</h3><p>　　接下来我们要确立一个概念：在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于<strong>博客工程目录（根目录）</strong>下，主要包含 Hexo 本身的配置；另一份位于<strong>主题目录</strong>下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>　　为了描述方便，在以下说明中，将前者称为<strong>站点配置文件</strong>， 后者称为<strong>主题配置文件</strong>。</p><h3 id="启用主题并调试"><a href="#启用主题并调试" class="headerlink" title="启用主题并调试"></a>启用主题并调试</h3><p>　　打开<strong>站点配置</strong>文件，找到theme字段，并将其值更改为next（主题文件夹名称）。<br><img src="https://musoucrow.github.io/images/build_bolg/change_theme.png"><br>到此，NexT 主题安装完成。下一步我们将验证主题是否正确启用.<br>　　首先打开终端并切换目录到博客工程，输入 <strong><code>hexo server --debug</code></strong> 进行网站调试。当命令行输出中提示出：<br>　　<strong><code>INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</code></strong><br>　　此时即可使用浏览器访问**<code>http://localhost:4000</code>** ，检查站点是否正确运行。<br>　　当你看到站点的外观与下图所示类似时即说明你已成功安装 NexT 主题。这是 NexT 默认的 Scheme —— Muse。</p><p><img src="https://musoucrow.github.io/images/build_bolg/muse.png"><br>　　现在，你已经成功安装并启用了 NexT 主题。你现在可以在终端按下Ctrl+C结束调试，下一步我们将要更改一些主题的设定，包括个性化以及集成第三方服务。</p><h3 id="个性化设置"><a href="#个性化设置" class="headerlink" title="个性化设置"></a>个性化设置</h3><p>　　打开站点配置文件( _config.yml)，你可以修改以下字段来实现：</p><ul><li><p>language  </p></li><li><p>设置成你所需要的语言，例如：language: zh-Hans</p></li><li><p>目前 NexT 支持的语言如以下表格所示：language<br><img src="https://musoucrow.github.io/images/build_bolg/language.png"></p></li><li><p>author</p></li><li><p>设置author为你的昵称，例如：Musoucrow</p></li></ul><p>　　打开主题配置文件，你可以修改以下字段来实现：</p><ul><li><p>avatar</p></li><li><p>设置成头像的链接地址，例如：avatar: <code>http://example.com/avatar.png</code></p></li><li><p>其中，头像的链接地址可以是：avatar</p></li><li><p>scheme</p></li><li><p>Scheme是NexT提供的一种特性，借助于Scheme，NexT为你提供多种不同的外观。同时，几乎所有的配置都可以 在Scheme之间共用。目前NexT支持三种Scheme，他们是：</p><ul><li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li><li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li><li>Pisces - 双栏 Scheme，小家碧玉似的清新</li></ul></li><li><p>搜索scheme关键字。 你会看到有三行scheme的配置，将你需用启用的scheme前面注释#即可。scheme<br><img src="https://musoucrow.github.io/images/build_bolg/scheme.png"></p></li><li><p>menu</p></li><li><p>设定菜单内容，可通过解除几个自带项的注释#来开启栏目。</p></li><li><p>也可以自己进行新增，格式为item name: link。</p><ul><li>item name是一个名称，这个名称并不直接显示在页面上，它将用于匹配图标以及翻译。</li></ul></li><li><p>NexT 默认的菜单项有（标注！的项表示需要手动创建这个页面）：menu<br><img src="https://musoucrow.github.io/images/build_bolg/menu.png"></p></li><li><p>social</p></li><li><p>social可让博客的侧栏里的角色介绍栏目下增加链接项（可添加多个），你可以这样设置：social1<br><img src="https://musoucrow.github.io/images/build_bolg/social1.png"></p></li><li><p>博客的具体效果为：social2<br><img src="https://musoucrow.github.io/images/build_bolg/social2.png"></p></li></ul><h3 id="新建标签和分类栏目"><a href="#新建标签和分类栏目" class="headerlink" title="新建标签和分类栏目"></a>新建标签和分类栏目</h3><p>　　回到终端，仍然是博客工程目录下，依次输入以下两句：</p><blockquote><p>hexo new page tags<br>  hexo new page categories</p></blockquote><p>　　这样便创建好了标签和分类栏目的页面文件，但仍需要做一些处理。<br>　　打开source&#x2F;categories&#x2F;index.md和source&#x2F;tags&#x2F;index.md，分别修改成：</p><blockquote><p>title: categories<br>date: 2017-02-25 21:43:34<br>comments: false<br>type: “categories”</p><p>date: 2017-02-25 22:40:53<br>tcomments: false<br>ttype: “tags”</p></blockquote><p>　　你现在可以再次调试一下看看效果，不出意外的话，已经实现了标签和分类栏目。记得要先结束之前的网站调试（在调试终端下按Ctrl+C），再重新进行。</p><h3 id="后记-3"><a href="#后记-3" class="headerlink" title="后记"></a>后记</h3><p>　　静态站点拥有一定的局限性，因此我们需要借助于第三方服务来扩展站点的功能。 以下是 NexT 目前支持的第三方服务，你可以根据你的需求集成一些功能进来。详情查看</p><h2 id="发表帖子"><a href="#发表帖子" class="headerlink" title="发表帖子"></a>发表帖子</h2><h3 id="前言-5"><a href="#前言-5" class="headerlink" title="前言"></a>前言</h3><p>　　博客的帖子是Markdown格式（后缀名为.md），如果你尚未熟悉，请去进行专门的学习。 　</p><h3 id="新建帖子"><a href="#新建帖子" class="headerlink" title="新建帖子"></a>新建帖子</h3><p>　　在终端、博客工程目录下输入：hexo new post test1以创建一个标题名为test1的帖子。你可以在source&#x2F;_posts&#x2F;目录下看到它。<br>　　在文件顶部有着与source&#x2F;categories&#x2F;index.md和source&#x2F;tags&#x2F;index.md相同格式的配置，该类配置可拥有如下属性（comments属性必须保证已经安装了第三方服务后才能生效）：</p><blockquote><p>title: 文章的标题<br>date: 创建日期，例如(2017-02-26 00:54:28)<br>updated: 修改日期<br>comments: 是否开启评论(true or false)<br>type: 标签，多个时表示为([a, b, c])<br>categories: 分类</p></blockquote><h3 id="修改创建格式"><a href="#修改创建格式" class="headerlink" title="修改创建格式"></a>修改创建格式</h3><p>　　使用命令创建的帖子文件的格式，系源自于scaffolds&#x2F;post.md，你可以通过修改它来达到帖子模板化的效果，例如：<br><img src="https://musoucrow.github.io/images/build_bolg/format.png"></p><h3 id="后记-4"><a href="#后记-4" class="headerlink" title="后记"></a>后记</h3><p>　　帖子文件的本质就是从模板产生的克隆品，所以也可以自己手动新建文件。同理删除帖子也只需要直接删除文件即可，无需通过网站管理之类的手段，非常方便。</p><h2 id="发布网站"><a href="#发布网站" class="headerlink" title="发布网站"></a>发布网站</h2><h3 id="前言-6"><a href="#前言-6" class="headerlink" title="前言"></a>前言</h3><p>　发布网站的原理其实就是生成网站文件夹并传输到GitHub上对应的仓库<code>https://github.com/username/username.github.io</code>, 然后便可通过<code>https://username.github.io</code>, 进行访问。</p><h3 id="上传部署"><a href="#上传部署" class="headerlink" title="上传部署"></a>上传部署</h3><p>　　在终端输入**<code>npm install hexo-deployer-git --save</code>**，安装完毕后打开站点配置文件，添加deploy字段。</p><blockquote><p>deploy:<br>type: git<br>repository: <code>http://github.com/username/username.github.io.git</code><br>branch: master  </p></blockquote><ul><li>注意事项<ul><li>是http而非https。</li><li>在旧版(&lt;3.0)的Hexo里是github而非git。</li><li>username即你的GitHub用户名，实际以你自己创建的仓库地址为准。</li></ul></li></ul><h3 id="生成并上传"><a href="#生成并上传" class="headerlink" title="生成并上传"></a>生成并上传</h3><p>　　在终端、博客工程目录下输入：**<code>hexo generate</code><strong>，完成后便会发现新增了public目录。那便是网站文件夹，用于上传到GitHub仓库。<br>　　接下来再输入</strong><code>hexo deploy</code>**，将网站文件夹上传到GitHub仓库。以后在本地做了修改后，便进行这两个操作将网站生成并上传即可。</p><h3 id="后记-5"><a href="#后记-5" class="headerlink" title="后记"></a>后记</h3><p>　　有时候把一些配置文件搞炸的时候或者上传有问题时，可以使用**<code>hexo clean</code>**来尝试修复。<br>　　如果觉得GitHub的传输速度过慢，可考虑修改host尝试能否增速，以下是一个江湖偏方：<br>　　<strong><code>151.101.88.249 github.global.ssl.fastly.Net</code></strong></p>]]></content>
-      
-      
+      <tags>
+        <tag>EVUS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac环境下使用GitHub和Hexo搭建博客</title>
+    <url>/burro-cmd.github.io/2019/08/13/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8GitHub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>　　<strong>欢迎参与讨论，转载请注明出处。</strong></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　一直想用一种方式来记录生活以及职业中的感受，所以接触到在Hexo上创建博客，在Github上托管。<br>　　本次博客搭建平台为Mac OS Mojave, 10.14.5，目前发现跟系统的特性没多大关联。这也是借鉴前辈的经验来搭建的，以下操作有做修改，有问题的欢迎各位指出，感谢。</p>
+<h2 id="部署GitHub"><a href="#部署GitHub" class="headerlink" title="部署GitHub"></a>部署GitHub</h2><h3 id="前言-1"><a href="#前言-1" class="headerlink" title="前言"></a>前言</h3><p>　　本次博客的发布网站是在GitHub的GitHub Pages仓库，通过把网站文件存放到这种仓库里，你便可以利用GitHub提供给你的外链访问它。<br>　　声明：以下部分内容转载自铁锚的<a href="https://blog.csdn.net/renfufei/article/details/37725057">创建GitHub技术博客全攻略</a>和Musoucrow的<a href="https://musoucrow.github.io/2017/02/26/build_bolg/">在Mac平台使用GitHub和Hexo搭建博客</a>。</p>
+<h3 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h3><p>　　前往<a href="https://musoucrow.github.io/2017/02/26/build_bolg/">GitHub</a>，参考下图输入账号、邮箱、密码，然后点击注册按钮。<br><img src="https://img-blog.csdn.net/20140712125642518?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVuZnVmZWk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
+<h3 id="初始设置"><a href="#初始设置" class="headerlink" title="初始设置"></a>初始设置</h3><p>　　注册完成后，选择Free免费账号完成设置。<br>　　<img src="https://img-blog.csdn.net/20140712125717088?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVuZnVmZWk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
+<h3 id="验证邮箱"><a href="#验证邮箱" class="headerlink" title="验证邮箱"></a>验证邮箱</h3><p>　　请打开你的邮箱，查看发送给你的确认邮件。你需要验证邮箱后，后面生成的个人主页才会被接受和发布。</p>
+<h3 id="创建页面仓库"><a href="#创建页面仓库" class="headerlink" title="创建页面仓库"></a>创建页面仓库</h3><p>　　前往<a href="https://github.com/new">创建仓库</a>，参考下图。<br>　　仓库的名字需要和你的账号对应， 如 tiemaocsdn.github.io。<br>　　输入基本信息，然后点击创建仓库。<br>　　<img src="https://img-blog.csdn.net/20140712125914603?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcmVuZnVmZWk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>　　当你创建完页面仓库后，此时你的个人页面<code>https://username.github.io/</code>，已经创建完成（username即你的GitHub用户名，下同），<br>虽然还是空无一物，不过你已可以进行下一步了。</p>
+<h2 id="安装前置软件"><a href="#安装前置软件" class="headerlink" title="安装前置软件"></a>安装前置软件</h2><h3 id="前言-2"><a href="#前言-2" class="headerlink" title="前言"></a>前言</h3><p>　　在进行安装核心软件之前，你需要先准备好其所依赖的软件。包括<a href="https://git-scm.com/">Git</a>、<a href="https://www.npmjs.com/">NPM</a>和<a href="https://nodejs.org/en/">Node.js</a>。</p>
+<h3 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a>安装Homebrew</h3><p>　　在Mac OS下，你可以选择通过<a href="https://brew.sh/">Homebrew</a>来进行许多服务类软件的安装（这样会方便很多），在其他系统下也有类似的替代方案。<br>　　打开终端, 输入以下脚本。</p>
+<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL &lt;https://raw.githubusercontent.com/Homebrew/install/master/install&gt;)&quot;  
+</code></pre>
+<p>　　等待安装完成后，在终端输入brew进行调试，如无报错则可继续。<br>　　<img src="https://musoucrow.github.io/images/build_bolg/brew.png">  </p>
+<h3 id="通过Homebrew安装其余软件"><a href="#通过Homebrew安装其余软件" class="headerlink" title="通过Homebrew安装其余软件"></a>通过Homebrew安装其余软件</h3><p>　　如果你不用Homebrew，那么请通过其他方式进行下载并安装（例如官网）。以下演示使用Homebrew安装他们，一样是通过终端输入，需要按照顺序。</p>
+<blockquote>
+<p>brew install git<br>  brew install node<br>  brew install npm</p>
+</blockquote>
+<p>与Homebrew一样，安装完成后，你可以尝试依次在终端输入git、node、npm进行调试，如无报错则可继续。</p>
+<h3 id="后记-1"><a href="#后记-1" class="headerlink" title="后记"></a>后记</h3><p>　　如果你觉得Homebrew的速度很慢，那么你可以考虑选择<strong>更换镜像</strong>。请通过搜索引擎寻找相关资料。</p>
+<h2 id="安装Hexo及主题"><a href="#安装Hexo及主题" class="headerlink" title="安装Hexo及主题"></a>安装Hexo及主题</h2><h3 id="前言-3"><a href="#前言-3" class="headerlink" title="前言"></a>前言</h3><p>　　本次博客的框架源自Hexo，我们通过使用它来搭建出博客。Hexo基于Node.js，所以我们可以使用NPM来安装它，这在其他系统下也是一样的。</p>
+<h3 id="使用NPM安装"><a href="#使用NPM安装" class="headerlink" title="使用NPM安装"></a>使用NPM安装</h3><p>　　与之前一样，在终端输入以下内容（选择其中之一），你的网络如果不是很好的话，可以选择方案二（通过淘宝镜像进行下载）。</p>
+<blockquote>
+<p>npm install -g hexo-cli<br>  npm install -g hexo-cli –registry&#x3D;<code>https://registry.npm.taobao.org</code></p>
+</blockquote>
+<h3 id="新建博客工程"><a href="#新建博客工程" class="headerlink" title="新建博客工程"></a>新建博客工程</h3><p>　　接下来你需要在终端切换到你觉得合适的目录下通过Hexo新建你的博客工程（也可以不管，只要你知道当前终端目录的所在）。例如（目录可通过拖动文件夹到终端指定）：</p>
+<blockquote>
+<p>cd &#x2F;Users&#x2F;Username&#x2F;Documents&#x2F;Bolg<br>  hexo init  </p>
+</blockquote>
+<p>经过一段时间后便会在Bolg文件夹下新建一堆文件，如下图这般，如无报错则可继续。<br>　　<img src="https://musoucrow.github.io/images/build_bolg/path.png"></p>
+<h3 id="关于博客主题"><a href="#关于博客主题" class="headerlink" title="关于博客主题"></a>关于博客主题</h3><p>　　在你新建博客工程后仍需要选择一个主题(theme)应用到博客里，主题文件位于博客工程下的<strong>themes</strong>目录，默认便存在一款名为landscape的主题。你可以选择从Hexo官网的**<a href="https://hexo.io/themes/">主题专栏</a><strong>下载其他主题。<br>　　以下便以本博客所使用的</strong><a href="https://github.com/iissnan/hexo-theme-next/">NexT</a><strong>为范例进行演示。接下来的内容将会</strong><a href="http://theme-next.iissnan.com/getting-started.html">参考这里</a>**。</p>
+<h3 id="安装NexT主题"><a href="#安装NexT主题" class="headerlink" title="安装NexT主题"></a>安装NexT主题</h3><p>　　前往**<a href="https://github.com/iissnan/hexo-theme-next/releases">发布页面</a>**选择你想要的版本（下图0.5.0版仅为示范），下载解压后获得Next主题，然后将其以文件夹的形式放到themes目录下。<br><img src="https://musoucrow.github.io/images/build_bolg/download.png"></p>
+<p>　　贴士：你可以考虑像我这样把解压后的文件夹名称更改为next，这样会更清晰。<br><img src="https://musoucrow.github.io/images/build_bolg/themes.png"></p>
+<h3 id="后记-2"><a href="#后记-2" class="headerlink" title="后记"></a>后记</h3><p>　　关于主题的选择其实远不止官网所刊，关于这些方面的你可以多去寻觅甚至自己动手丰衣足食！</p>
+<h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><h3 id="前言-4"><a href="#前言-4" class="headerlink" title="前言"></a>前言</h3><p>　　接下来我们要确立一个概念：在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于<strong>博客工程目录（根目录）</strong>下，主要包含 Hexo 本身的配置；另一份位于<strong>主题目录</strong>下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>　　为了描述方便，在以下说明中，将前者称为<strong>站点配置文件</strong>， 后者称为<strong>主题配置文件</strong>。</p>
+<h3 id="启用主题并调试"><a href="#启用主题并调试" class="headerlink" title="启用主题并调试"></a>启用主题并调试</h3><p>　　打开<strong>站点配置</strong>文件，找到theme字段，并将其值更改为next（主题文件夹名称）。<br><img src="https://musoucrow.github.io/images/build_bolg/change_theme.png"><br>到此，NexT 主题安装完成。下一步我们将验证主题是否正确启用.<br>　　首先打开终端并切换目录到博客工程，输入 <strong><code>hexo server --debug</code></strong> 进行网站调试。当命令行输出中提示出：<br>　　<strong><code>INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</code></strong><br>　　此时即可使用浏览器访问**<code>http://localhost:4000</code>** ，检查站点是否正确运行。<br>　　当你看到站点的外观与下图所示类似时即说明你已成功安装 NexT 主题。这是 NexT 默认的 Scheme —— Muse。</p>
+<p><img src="https://musoucrow.github.io/images/build_bolg/muse.png"><br>　　现在，你已经成功安装并启用了 NexT 主题。你现在可以在终端按下Ctrl+C结束调试，下一步我们将要更改一些主题的设定，包括个性化以及集成第三方服务。</p>
+<h3 id="个性化设置"><a href="#个性化设置" class="headerlink" title="个性化设置"></a>个性化设置</h3><p>　　打开站点配置文件( _config.yml)，你可以修改以下字段来实现：</p>
+<ul>
+<li><p>language  </p>
+</li>
+<li><p>设置成你所需要的语言，例如：language: zh-Hans</p>
+</li>
+<li><p>目前 NexT 支持的语言如以下表格所示：language<br><img src="https://musoucrow.github.io/images/build_bolg/language.png"></p>
+</li>
+<li><p>author</p>
+</li>
+<li><p>设置author为你的昵称，例如：Musoucrow</p>
+</li>
+</ul>
+<p>　　打开主题配置文件，你可以修改以下字段来实现：</p>
+<ul>
+<li><p>avatar</p>
+</li>
+<li><p>设置成头像的链接地址，例如：avatar: <code>http://example.com/avatar.png</code></p>
+</li>
+<li><p>其中，头像的链接地址可以是：avatar</p>
+</li>
+<li><p>scheme</p>
+</li>
+<li><p>Scheme是NexT提供的一种特性，借助于Scheme，NexT为你提供多种不同的外观。同时，几乎所有的配置都可以 在Scheme之间共用。目前NexT支持三种Scheme，他们是：</p>
+<ul>
+<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
+<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
+<li>Pisces - 双栏 Scheme，小家碧玉似的清新</li>
+</ul>
+</li>
+<li><p>搜索scheme关键字。 你会看到有三行scheme的配置，将你需用启用的scheme前面注释#即可。scheme<br><img src="https://musoucrow.github.io/images/build_bolg/scheme.png"></p>
+</li>
+<li><p>menu</p>
+</li>
+<li><p>设定菜单内容，可通过解除几个自带项的注释#来开启栏目。</p>
+</li>
+<li><p>也可以自己进行新增，格式为item name: link。</p>
+<ul>
+<li>item name是一个名称，这个名称并不直接显示在页面上，它将用于匹配图标以及翻译。</li>
+</ul>
+</li>
+<li><p>NexT 默认的菜单项有（标注！的项表示需要手动创建这个页面）：menu<br><img src="https://musoucrow.github.io/images/build_bolg/menu.png"></p>
+</li>
+<li><p>social</p>
+</li>
+<li><p>social可让博客的侧栏里的角色介绍栏目下增加链接项（可添加多个），你可以这样设置：social1<br><img src="https://musoucrow.github.io/images/build_bolg/social1.png"></p>
+</li>
+<li><p>博客的具体效果为：social2<br><img src="https://musoucrow.github.io/images/build_bolg/social2.png"></p>
+</li>
+</ul>
+<h3 id="新建标签和分类栏目"><a href="#新建标签和分类栏目" class="headerlink" title="新建标签和分类栏目"></a>新建标签和分类栏目</h3><p>　　回到终端，仍然是博客工程目录下，依次输入以下两句：</p>
+<blockquote>
+<p>hexo new page tags<br>  hexo new page categories</p>
+</blockquote>
+<p>　　这样便创建好了标签和分类栏目的页面文件，但仍需要做一些处理。<br>　　打开source&#x2F;categories&#x2F;index.md和source&#x2F;tags&#x2F;index.md，分别修改成：</p>
+<blockquote>
+<p>title: categories<br>date: 2017-02-25 21:43:34<br>comments: false<br>type: “categories”</p>
+<p>date: 2017-02-25 22:40:53<br>tcomments: false<br>ttype: “tags”</p>
+</blockquote>
+<p>　　你现在可以再次调试一下看看效果，不出意外的话，已经实现了标签和分类栏目。记得要先结束之前的网站调试（在调试终端下按Ctrl+C），再重新进行。</p>
+<h3 id="后记-3"><a href="#后记-3" class="headerlink" title="后记"></a>后记</h3><p>　　静态站点拥有一定的局限性，因此我们需要借助于第三方服务来扩展站点的功能。 以下是 NexT 目前支持的第三方服务，你可以根据你的需求集成一些功能进来。详情查看</p>
+<h2 id="发表帖子"><a href="#发表帖子" class="headerlink" title="发表帖子"></a>发表帖子</h2><h3 id="前言-5"><a href="#前言-5" class="headerlink" title="前言"></a>前言</h3><p>　　博客的帖子是Markdown格式（后缀名为.md），如果你尚未熟悉，请去进行专门的学习。 　</p>
+<h3 id="新建帖子"><a href="#新建帖子" class="headerlink" title="新建帖子"></a>新建帖子</h3><p>　　在终端、博客工程目录下输入：hexo new post test1以创建一个标题名为test1的帖子。你可以在source&#x2F;_posts&#x2F;目录下看到它。<br>　　在文件顶部有着与source&#x2F;categories&#x2F;index.md和source&#x2F;tags&#x2F;index.md相同格式的配置，该类配置可拥有如下属性（comments属性必须保证已经安装了第三方服务后才能生效）：</p>
+<blockquote>
+<p>title: 文章的标题<br>date: 创建日期，例如(2017-02-26 00:54:28)<br>updated: 修改日期<br>comments: 是否开启评论(true or false)<br>type: 标签，多个时表示为([a, b, c])<br>categories: 分类</p>
+</blockquote>
+<h3 id="修改创建格式"><a href="#修改创建格式" class="headerlink" title="修改创建格式"></a>修改创建格式</h3><p>　　使用命令创建的帖子文件的格式，系源自于scaffolds&#x2F;post.md，你可以通过修改它来达到帖子模板化的效果，例如：<br><img src="https://musoucrow.github.io/images/build_bolg/format.png"></p>
+<h3 id="后记-4"><a href="#后记-4" class="headerlink" title="后记"></a>后记</h3><p>　　帖子文件的本质就是从模板产生的克隆品，所以也可以自己手动新建文件。同理删除帖子也只需要直接删除文件即可，无需通过网站管理之类的手段，非常方便。</p>
+<h2 id="发布网站"><a href="#发布网站" class="headerlink" title="发布网站"></a>发布网站</h2><h3 id="前言-6"><a href="#前言-6" class="headerlink" title="前言"></a>前言</h3><p>　发布网站的原理其实就是生成网站文件夹并传输到GitHub上对应的仓库<code>https://github.com/username/username.github.io</code>, 然后便可通过<code>https://username.github.io</code>, 进行访问。</p>
+<h3 id="上传部署"><a href="#上传部署" class="headerlink" title="上传部署"></a>上传部署</h3><p>　　在终端输入**<code>npm install hexo-deployer-git --save</code>**，安装完毕后打开站点配置文件，添加deploy字段。</p>
+<blockquote>
+<p>deploy:<br>type: git<br>repository: <code>http://github.com/username/username.github.io.git</code><br>branch: master  </p>
+</blockquote>
+<ul>
+<li>注意事项<ul>
+<li>是http而非https。</li>
+<li>在旧版(&lt;3.0)的Hexo里是github而非git。</li>
+<li>username即你的GitHub用户名，实际以你自己创建的仓库地址为准。</li>
+</ul>
+</li>
+</ul>
+<h3 id="生成并上传"><a href="#生成并上传" class="headerlink" title="生成并上传"></a>生成并上传</h3><p>　　在终端、博客工程目录下输入：**<code>hexo generate</code><strong>，完成后便会发现新增了public目录。那便是网站文件夹，用于上传到GitHub仓库。<br>　　接下来再输入</strong><code>hexo deploy</code>**，将网站文件夹上传到GitHub仓库。以后在本地做了修改后，便进行这两个操作将网站生成并上传即可。</p>
+<h3 id="后记-5"><a href="#后记-5" class="headerlink" title="后记"></a>后记</h3><p>　　有时候把一些配置文件搞炸的时候或者上传有问题时，可以使用**<code>hexo clean</code>**来尝试修复。<br>　　如果觉得GitHub的传输速度过慢，可考虑修改host尝试能否增速，以下是一个江湖偏方：<br>　　<strong><code>151.101.88.249 github.global.ssl.fastly.Net</code></strong></p>
+]]></content>
       <categories>
-          
-          <category> Tech </category>
-          
+        <category>Tech</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> GitHub </tag>
-            
-            <tag> NPM </tag>
-            
-            <tag> Node.js </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+        <tag>NPM</tag>
+        <tag>Node.js</tag>
+      </tags>
+  </entry>
 </search>
