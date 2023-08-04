@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Atom中Markdown语法</title>
-    <url>/burro-cmd.github.io/2019/08/14/Atom%E4%B8%ADMarkdown%E8%AF%AD%E6%B3%95/</url>
+    <url>/2019/08/14/Atom%E4%B8%ADMarkdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><figure class="highlight clean"><table><tr><td class="code"><pre><span class="line">一级标题       语法：#+空格</span><br><span class="line">二级标题       语法：##+空格</span><br><span class="line">三级标题       语法：###+空格</span><br></pre></td></tr></table></figure>
 <p>效果：</p>
 <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><figure class="highlight"><table><tr><td class="code"><pre><span class="line">无序列表        语法：-+空格</span><br></pre></td></tr></table></figure>
@@ -97,7 +97,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Atom使用</title>
-    <url>/burro-cmd.github.io/2019/08/14/Atom%E4%BD%BF%E7%94%A8/</url>
+    <url>/2019/08/14/Atom%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="Packages"><a href="#Packages" class="headerlink" title="Packages"></a>Packages</h3><p><strong>1. Simplified-chinese-menu</strong><br>Atom 的简体中文汉化语言包,目前最全的汉化包。包含菜单汉化、右键菜单汉化以及设置汉化。</p>
 <p><strong>2. Emmet</strong><br>前端开发都懂得的，html 代码补全，使用方法还有文档可以查阅 emmet使用文档。</p>
 <p><strong>3. File-icons</strong><br>不同格式的文本显示 不同颜色和类型的图标，便于分辨。</p>
@@ -215,7 +215,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Mac系统清理</title>
-    <url>/burro-cmd.github.io/2020/08/26/Mac%20%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%90%86%E6%96%B9%E6%B3%95/</url>
+    <url>/2020/08/26/Mac%20%E7%B3%BB%E7%BB%9F%E6%B8%85%E7%90%86%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="查看系统的文件占用详情"><a href="#查看系统的文件占用详情" class="headerlink" title="查看系统的文件占用详情"></a>查看系统的文件占用详情</h4><figure class="highlight coq"><table><tr><td class="code"><pre><span class="line">方法：</span><br><span class="line"><span class="keyword">Step</span> <span class="number">1</span>: 查看整个电脑的文件大小分布，命令：du -sh *</span><br><span class="line"><span class="keyword">Step</span> <span class="number">2</span>: 查看较大的文件，定位到较大文件下</span><br><span class="line">        <span class="number">1</span>）cd ~/<span class="keyword">Library</span></span><br><span class="line">        <span class="number">2</span>) du -d <span class="number">1</span> -h</span><br><span class="line"><span class="keyword">Step</span> <span class="number">3</span>: 有针对性的删除文件</span><br></pre></td></tr></table></figure>
 <h3 id="一、首先打开终端，输入命令"><a href="#一、首先打开终端，输入命令" class="headerlink" title="一、首先打开终端，输入命令"></a>一、首先打开终端，输入命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">du</span> -sh *</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -244,7 +244,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>MAC环境下多个MP4视频合并成一个MP4视频</title>
-    <url>/burro-cmd.github.io/2020/05/19/MAC%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%A4%9A%E4%B8%AAMP4%E8%A7%86%E9%A2%91%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP4%E8%A7%86%E9%A2%91/</url>
+    <url>/2020/05/19/MAC%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%A4%9A%E4%B8%AAMP4%E8%A7%86%E9%A2%91%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP4%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
 <li>前言</li>
 <li>命令</li>
@@ -270,7 +270,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Mac下多个MP3文件合并成一个MP3文件</title>
-    <url>/burro-cmd.github.io/2020/04/16/Mac%E4%B8%8B%E5%A4%9A%E4%B8%AAMP3%E6%96%87%E4%BB%B6%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP3%E6%96%87%E4%BB%B6/</url>
+    <url>/2020/04/16/Mac%E4%B8%8B%E5%A4%9A%E4%B8%AAMP3%E6%96%87%E4%BB%B6%E5%90%88%E5%B9%B6%E6%88%90%E4%B8%80%E4%B8%AAMP3%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
 <li>前言</li>
 <li>命令</li>
@@ -299,7 +299,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Mac环境下Crontab定时任务（3）</title>
-    <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8BCrontab%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%883%EF%BC%89/</url>
+    <url>/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8BCrontab%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%EF%BC%883%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
 <p><strong>参考网站：</strong></p>
 <ol>
@@ -316,7 +316,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Mac环下Python3定时任务之顺序执行多个py脚本（2）</title>
-    <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E4%B8%8BPython3%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AApy%E8%84%9A%E6%9C%AC%EF%BC%882%EF%BC%89/</url>
+    <url>/2020/04/07/Mac%E7%8E%AF%E4%B8%8BPython3%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8B%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AApy%E8%84%9A%E6%9C%AC%EF%BC%882%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
 <li>前言</li>
 <li>代码</li>
@@ -349,7 +349,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Mac环境下 下载在线m3u8视频</title>
-    <url>/burro-cmd.github.io/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%20%E5%9C%A8%E7%BA%BFm3u8%E8%A7%86%E9%A2%91/</url>
+    <url>/2020/04/07/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%20%E5%9C%A8%E7%BA%BFm3u8%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
 <li>前言</li>
 <li>环境搭建</li>
@@ -394,7 +394,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Mac环境下利用Python + Selenium实现自动登录签到（1）</title>
-    <url>/burro-cmd.github.io/2020/03/17/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%88%A9%E7%94%A8Python%20+%20Selenium%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%E7%AD%BE%E5%88%B0%EF%BC%881%EF%BC%89/</url>
+    <url>/2020/03/17/Mac%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%88%A9%E7%94%A8Python%20+%20Selenium%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95%E7%AD%BE%E5%88%B0%EF%BC%881%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
 <li>前言</li>
 <li>环境搭建</li>
@@ -471,7 +471,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>压凹_Indent</title>
-    <url>/burro-cmd.github.io/2023/08/02/%E5%8E%8B%E5%87%B9_Indent/</url>
+    <url>/2023/08/02/%E5%8E%8B%E5%87%B9_Indent/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>压凹：</strong>通过使用厚度和间隙值进来生成特征，压凹特征在目标实体上生成与所选工具实体的轮廓非常接近的等距袋套或突起特征。</p>
 <p><strong>要求：</strong></p>
 <ul>
@@ -495,7 +495,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/burro-cmd.github.io/2023/02/10/hello-world/</url>
+    <url>/2023/02/10/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -513,7 +513,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Mac环境下安装Python3</title>
-    <url>/burro-cmd.github.io/2019/08/23/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%B8%8A%E5%AE%89%E8%A3%85Python3/</url>
+    <url>/2019/08/23/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%B8%8A%E5%AE%89%E8%A3%85Python3/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>  <strong>欢迎参与讨论，转载请注明出处。</strong></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  MacOS Mojave:10.14.5</p>
 <h2 id="检查Mac自带Python版本"><a href="#检查Mac自带Python版本" class="headerlink" title="检查Mac自带Python版本"></a>检查Mac自带Python版本</h2><ul>
@@ -550,7 +550,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>申请美国EVUS（签证更新电子系统）</title>
-    <url>/burro-cmd.github.io/2019/08/23/%E7%BE%8E%E5%9B%BDEVUS/</url>
+    <url>/2019/08/23/%E7%BE%8E%E5%9B%BDEVUS/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  <strong>Q&amp;A</strong><br>  Q: 什么是签证更新电子系统?<br>  A: 签证更新电子系统，或EVUS，是一个电子平台，用于确定持有十年B1, B2或B1&#x2F;B2访客签证的旅客因临时商务或旅游前来美国旅行的资格。符合这一描述的旅客必须在前往美国之前进行EVUS登记。  </p>
 <p>  Q: 如果我已经得到了签证，为什么还需要进行EVUS登记？<br>  A: 如果您持有B1，B2或B1&#x2F;B2的访客签证前往美国进行短期商务和旅游，根据美国移民法的规定，<strong>您必须完成EVUS登记</strong>。  </p>
 <p>  Q: EVUS和签证之间的区别是什么？<br>  A: EVUS登记不是签证。它不符合律或法规的要求以替代美国签证，当根据美国法律要求签证时。计划前往美国访问的旅客出行必须持有有效的B1，B2或B1 &#x2F; B2级访客签证。身为中华人民共和国公民&#x2F;国民的旅客仅持有有效的十年B1，B2或B1 &#x2F; B2级签证，必须在EVUS上申请登记，并且在行前持有签证。如果您已在EVUS登记并抵达机场，该旅客将可以前往美国。其他任何非B1，B2或B1 &#x2F; B2具有十年有效期类型的签证，不需要申请EVUS登记。  </p>
@@ -587,7 +587,7 @@ search | web前段开发工程师 | 码农
   </entry>
   <entry>
     <title>Mac环境下使用GitHub和Hexo搭建博客</title>
-    <url>/burro-cmd.github.io/2019/08/13/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8GitHub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <url>/2019/08/13/%E5%9C%A8Mac%E5%B9%B3%E5%8F%B0%E4%BD%BF%E7%94%A8GitHub%E5%92%8CHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>　　<strong>欢迎参与讨论，转载请注明出处。</strong></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　一直想用一种方式来记录生活以及职业中的感受，所以接触到在Hexo上创建博客，在Github上托管。<br>　　本次博客搭建平台为Mac OS Mojave, 10.14.5，目前发现跟系统的特性没多大关联。这也是借鉴前辈的经验来搭建的，以下操作有做修改，有问题的欢迎各位指出，感谢。</p>
 <h2 id="部署GitHub"><a href="#部署GitHub" class="headerlink" title="部署GitHub"></a>部署GitHub</h2><h3 id="前言-1"><a href="#前言-1" class="headerlink" title="前言"></a>前言</h3><p>　　本次博客的发布网站是在GitHub的GitHub Pages仓库，通过把网站文件存放到这种仓库里，你便可以利用GitHub提供给你的外链访问它。<br>　　声明：以下部分内容转载自铁锚的<a href="https://blog.csdn.net/renfufei/article/details/37725057">创建GitHub技术博客全攻略</a>和Musoucrow的<a href="https://musoucrow.github.io/2017/02/26/build_bolg/">在Mac平台使用GitHub和Hexo搭建博客</a>。</p>
